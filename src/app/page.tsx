@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <>
@@ -592,7 +590,7 @@ export default function Home() {
                                         <h6 className="sub-head">What clients say?</h6>
                                     </div>
                                     <div className="col-lg-7">
-                                        <h3 className="text-indent">We've got a Proven <br /> Formula for Success!
+                                        <h3 className="text-indent">We have got a Proven <br /> Formula for Success!
                                         </h3>
                                         <div className="states d-flex mt-40">
                                             <div>
