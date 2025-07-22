@@ -1,5 +1,8 @@
 'use client';
 
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Menu() {
     return (
         <div className="hamenu">
@@ -9,32 +12,32 @@ export default function Menu() {
                     <ul className="main-menu rest">
                         <li>
                             <div className="o-hidden">
-                                <a href="/" className="link"><span className="fill-text"
-                                        data-text="Home">Home</span></a>
+                                <Link href="/" className="link"><span className="fill-text"
+                                        data-text="Home">Home</span></Link>
                             </div>
                         </li>
                         <li>
                             <div className="o-hidden">
-                                <a href="/about" className="link"><span className="fill-text"
-                                        data-text="About">About</span></a>
+                                <Link href="/about" className="link"><span className="fill-text"
+                                        data-text="About">About</span></Link>
                             </div>
                         </li>
                         <li>
                             <div className="o-hidden">
-                                <a href="/services" className="link"><span className="fill-text"
-                                        data-text="Services">Services</span></a>
+                                <Link href="/services" className="link"><span className="fill-text"
+                                        data-text="Services">Services</span></Link>
                             </div>
                         </li>
                         <li>
                             <div className="o-hidden">
-                                <a href="/portfolio" className="link"><span className="fill-text"
-                                        data-text="Portfolio">Portfolio</span></a>
+                                <Link href="/portfolio" className="link"><span className="fill-text"
+                                        data-text="Portfolio">Portfolio</span></Link>
                             </div>
                         </li>
                         <li>
                             <div className="o-hidden">
-                                <a href="/contact" className="link"><span className="fill-text"
-                                        data-text="Start Project">Start Project</span></a>
+                                <Link href="/contact" className="link"><span className="fill-text"
+                                        data-text="Start Project">Start Project</span></Link>
                             </div>
                         </li>
                     </ul>
@@ -42,20 +45,20 @@ export default function Menu() {
                 <div className="cont-info valign">
                     <div className="text-center full-width">
                         <div className="logo">
-                            <img src="assets/imgs/Logo-light.svg" alt="" />
+                            <Image src="assets/imgs/Logo-light.svg" alt="" />
                         </div>
                         <div className="social-icon mt-40">
-                            <a href="#"> <i className="fab fa-facebook-f"></i> </a>
-                            <a href="#"> <i className="fab fa-x-twitter"></i> </a>
-                            <a href="#"> <i className="fab fa-linkedin-in"></i> </a>
-                            <a href="#"> <i className="fab fa-instagram"></i> </a>
+                            <Link href="#"> <i className="fab fa-facebook-f"></i> </Link>
+                            <Link href="#"> <i className="fab fa-x-twitter"></i> </Link>
+                            <Link href="#"> <i className="fab fa-linkedin-in"></i> </Link>
+                            <Link href="#"> <i className="fab fa-instagram"></i> </Link>
                         </div>
                         <div className="item mt-30">
                             <h5>Surrey, British Columbia, CA</h5>
                         </div>
                         <div className="item mt-10">
-                            <h5><a href="#0">info@promoyourbiz.ca</a></h5>
-                            <h5 className="underline"><a href="#0">+1 840 841 25 69</a></h5>
+                            <h5><Link href="#0">info@promoyourbiz.ca</Link></h5>
+                            <h5 className="underline"><Link href="#0">+1 840 841 25 69</Link></h5>
                         </div>
                     </div>
                 </div>

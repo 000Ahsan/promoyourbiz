@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function About() {
     return (
         <main>
@@ -72,7 +75,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className="fit-img radius-15">
-                        <img src="assets/imgs/about/header/1.jpg" alt="" />
+                        <Image src="assets/imgs/about/header/1.jpg" alt="" />
                     </div>
                 </div>
             </header>
@@ -92,14 +95,14 @@ export default function About() {
                                     <div className="text">
                                         <p>We’re a full-service digital agency specializing in design, development, and growth marketing.
                                         Whether you need a standout brand, a high-performing website, or strategies that drive traffic and conversions — we’re here to take your business to the next level.</p>
-                                        <a href="#0" className="crv-butn mt-40">
+                                        <Link href="#0" className="crv-butn mt-40">
                                             <div className="d-flex">
                                                 <span className="text">Learn More</span>
                                                 <span className="icon">
-                                                    <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                                    <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                                 </span>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -115,7 +118,7 @@ export default function About() {
                                             <p>Brand Identity, Strategy & Voice,<br />Logo, Positioning</p>
                                             <div>
                                                 <div className="icon invert">
-                                                    <img src="../common/imgs/icons/crown-solid.svg" alt="" />
+                                                    <Image src="../common/imgs/icons/crown-solid.svg" alt="" />
                                                 </div>
                                             </div>
                                         </div>
@@ -130,7 +133,7 @@ export default function About() {
                                             <p>Web UI/UX, Wireframes & Mockups,<br />Visual Assets</p>
                                             <div>
                                                 <div className="icon invert">
-                                                    <img src="../common/imgs/icons/bezier-curve-solid.svg" alt="" />
+                                                    <Image src="../common/imgs/icons/bezier-curve-solid.svg" alt="" />
                                                 </div>
                                             </div>
                                         </div>
@@ -145,7 +148,7 @@ export default function About() {
                                             <p>Websites, Web Apps, APIs,<br />Clean & Scalable</p>
                                             <div>
                                                 <div className="icon invert">
-                                                    <img src="../common/imgs/icons/code-solid.svg" alt="" />
+                                                    <Image src="../common/imgs/icons/code-solid.svg" alt="" />
                                                 </div>
                                             </div>
                                         </div>
@@ -160,7 +163,7 @@ export default function About() {
                                             <p>SEO, Social Media, Paid Ads,<br />Content Strategy</p>
                                             <div>
                                                 <div className="icon invert">
-                                                    <img src="../common/imgs/icons/chart-line-solid.svg" alt="" />
+                                                    <Image src="../common/imgs/icons/chart-line-solid.svg" alt="" />
                                                 </div>
                                             </div>
                                         </div>
@@ -178,7 +181,7 @@ export default function About() {
                         <div className="col-lg-5">
                             <div className="img-box">
                                 <div className="img fit-img">
-                                    <img src="assets/imgs/about/intro1.jpg" alt="" />
+                                    <Image src="assets/imgs/about/intro1.jpg" alt="" />
                                 </div>
                                 <div className="states">
                                     <h2 className="mb-10 fw-600">7k+</h2>
@@ -204,12 +207,12 @@ export default function About() {
                                 </div>
                                 <div className="butn-vid d-flex align-items-center">
                                     <div className="play-button">
-                                        <a href="https://youtu.be/AzwC6umvd1s" className="vid">
+                                        <Link href="https://youtu.be/AzwC6umvd1s" className="vid">
                                             <i className="fas fa-play"></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="cont">
-                                        <span>Let's see <br /> how we did it.</span>
+                                        <span>Lets see <br /> how we did it.</span>
                                     </div>
                                     <div className="shaps bottom">
                                         <div className="shap-right-top">
@@ -296,7 +299,7 @@ export default function About() {
                         </div>
                         <div className="item" data-tp-throwable-el="">
                             <div className="icon1">
-                                <img src="assets/imgs/about/s-icon1.svg" alt="" />
+                                <Image src="assets/imgs/about/s-icon1.svg" alt="" />
                             </div>
                         </div>
                         <div className="item" data-tp-throwable-el="">
@@ -306,7 +309,7 @@ export default function About() {
                         </div>
                         <div className="item" data-tp-throwable-el="">
                             <div className="">
-                                <img src="assets/imgs/about/s-icon2.svg" alt="" />
+                                <Image src="assets/imgs/about/s-icon2.svg" alt="" />
                             </div>
                         </div>
                         <div className="item" data-tp-throwable-el="">
@@ -328,10 +331,10 @@ export default function About() {
                                 <div className="col-lg-5">
                                     <div className="qoute-icon md-mb50">
                                         <div className="text">
-                                            <img src="assets/imgs/about/testim/Vector_Cricle_Text.svg" alt="" />
+                                            <Image src="assets/imgs/about/testim/Vector_Cricle_Text.svg" alt="" />
                                         </div>
                                         <div className="icon">
-                                            <img src="assets/imgs/about/testim/vector_quote.svg" alt="" />
+                                            <Image src="assets/imgs/about/testim/vector_quote.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -341,13 +344,13 @@ export default function About() {
                                             <div className="swiper-slide">
                                                 <div className="item">
                                                     <div className="text">
-                                                        <h4>"Their ability to deliver high-quality design and clean, functional UI stood out from day one. A team that's passionate, professional, and full of creativity. Exactly what we needed — highly recommended."</h4>
+                                                        <h4>Their ability to deliver high-quality design and clean, functional UI stood out from day one. A team thats passionate, professional, and full of creativity. Exactly what we needed — highly recommended.</h4>
                                                     </div>
                                                     <div
                                                         className="info d-flex align-items-center mt-40 pt-30 bord-thin-top-light">
                                                         <div>
                                                             <div className="img-author">
-                                                                <img src="assets/imgs/about/testim/avatar1.jpg"
+                                                                <Image src="assets/imgs/about/testim/avatar1.jpg"
                                                                     alt="" />
                                                             </div>
                                                         </div>
@@ -361,13 +364,13 @@ export default function About() {
                                             <div className="swiper-slide">
                                                 <div className="item">
                                                     <div className="text">
-                                                        <h4>"From branding to development, their attention to detail and creative energy made all the difference. A professional, forward-thinking team that truly understands digital — highly recommended."</h4>
+                                                        <h4>From branding to development, their attention to detail and creative energy made all the difference. A professional, forward-thinking team that truly understands digital — highly recommended.</h4>
                                                     </div>
                                                     <div
                                                         className="info d-flex align-items-center mt-40 pt-30 bord-thin-top-light">
                                                         <div>
                                                             <div className="img-author">
-                                                                <img src="assets/imgs/about/testim/avatar2.jpg"
+                                                                <Image src="assets/imgs/about/testim/avatar2.jpg"
                                                                     alt="" />
                                                             </div>
                                                         </div>
@@ -395,35 +398,35 @@ export default function About() {
                                 <div className="col-lg col-md-4 col-6 md-mb30">
                                     <div className="item d-flex align-items-center justify-content-center">
                                         <div className="img">
-                                            <img src="assets/imgs/about/clients/1.svg" alt="" />
+                                            <Image src="assets/imgs/about/clients/1.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg col-md-4 col-6 md-mb30">
                                     <div className="item d-flex align-items-center justify-content-center">
                                         <div className="img">
-                                            <img src="assets/imgs/about/clients/2.svg" alt="" />
+                                            <Image src="assets/imgs/about/clients/2.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg col-md-4 col-6 md-mb30">
                                     <div className="item d-flex align-items-center justify-content-center">
                                         <div className="img">
-                                            <img src="assets/imgs/about/clients/3.svg" alt="" />
+                                            <Image src="assets/imgs/about/clients/3.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg col-md-4 col-6 sm-mb30">
                                     <div className="item d-flex align-items-center justify-content-center">
                                         <div className="img">
-                                            <img src="assets/imgs/about/clients/4.svg" alt="" />
+                                            <Image src="assets/imgs/about/clients/4.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg col-md-4 col-6">
                                     <div className="item d-flex align-items-center justify-content-center">
                                         <div className="img">
-                                            <img src="assets/imgs/about/clients/5.svg" alt="" />
+                                            <Image src="assets/imgs/about/clients/5.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -440,7 +443,7 @@ export default function About() {
                     <div className="sec-head mb-80">
                         <div className="row">
                             <div className="col-lg-7">
-                                <h6 className="sub-head">Team's Leaders</h6>
+                                <h6 className="sub-head">Teams Leaders</h6>
                             </div>
                             <div className="col-lg-4 d-flex align-items-center">
                                 <div className="ml-auto">
@@ -453,7 +456,7 @@ export default function About() {
                         <div className="d-flex">
                             <div>
                                 <div className="img fit-img">
-                                    <img src="assets/imgs/about/team/1.png" alt="" />
+                                    <Image src="assets/imgs/about/team/1.png" alt="" />
                                 </div>
                             </div>
                             <div className="cont">
@@ -462,18 +465,18 @@ export default function About() {
                             </div>
                             <div className="ml-auto">
                                 <div className="social-icon">
-                                    <a href="#0">
+                                    <Link href="#0">
                                         <i className="fa-brands fa-x-twitter"></i>
-                                    </a>
-                                    <a href="#0">
+                                    </Link>
+                                    <Link href="#0">
                                         <i className="fa-brands fa-instagram"></i>
-                                    </a>
-                                    <a href="#0">
+                                    </Link>
+                                    <Link href="#0">
                                         <i className="fa-brands fa-dribbble"></i>
-                                    </a>
-                                    <a href="#0">
+                                    </Link>
+                                    <Link href="#0">
                                         <i className="fa-brands fa-behance"></i>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -482,7 +485,7 @@ export default function About() {
                         <div className="d-flex">
                             <div>
                                 <div className="img fit-img">
-                                    <img src="assets/imgs/about/team/2.png" alt="" />
+                                    <Image src="assets/imgs/about/team/2.png" alt="" />
                                 </div>
                             </div>
                             <div className="cont">
@@ -491,12 +494,12 @@ export default function About() {
                             </div>
                             <div className="ml-auto">
                                 <div className="social-icon">
-                                    <a href="#0">
+                                    <Link href="#0">
                                         <i className="fa-brands fa-x-twitter"></i>
-                                    </a>
-                                    <a href="#0">
+                                    </Link>
+                                    <Link href="#0">
                                         <i className="fa-brands fa-instagram"></i>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -505,7 +508,7 @@ export default function About() {
                         <div className="d-flex">
                             <div>
                                 <div className="img fit-img">
-                                    <img src="assets/imgs/about/team/3.png" alt="" />
+                                    <Image src="assets/imgs/about/team/3.png" alt="" />
                                 </div>
                             </div>
                             <div className="cont">
@@ -514,15 +517,15 @@ export default function About() {
                             </div>
                             <div className="ml-auto">
                                 <div className="social-icon">
-                                    <a href="#0">
+                                    <Link href="#0">
                                         <i className="fa-brands fa-x-twitter"></i>
-                                    </a>
-                                    <a href="#0">
+                                    </Link>
+                                    <Link href="#0">
                                         <i className="fa-brands fa-dribbble"></i>
-                                    </a>
-                                    <a href="#0">
+                                    </Link>
+                                    <Link href="#0">
                                         <i className="fa-brands fa-behance"></i>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -531,7 +534,7 @@ export default function About() {
                         <div className="d-flex">
                             <div>
                                 <div className="img fit-img">
-                                    <img src="assets/imgs/about/team/4.png" alt="" />
+                                    <Image src="assets/imgs/about/team/4.png" alt="" />
                                 </div>
                             </div>
                             <div className="cont">
@@ -540,15 +543,15 @@ export default function About() {
                             </div>
                             <div className="ml-auto">
                                 <div className="social-icon">
-                                    <a href="#0">
+                                    <Link href="#0">
                                         <i className="fa-brands fa-instagram"></i>
-                                    </a>
-                                    <a href="#0">
+                                    </Link>
+                                    <Link href="#0">
                                         <i className="fa-brands fa-dribbble"></i>
-                                    </a>
-                                    <a href="#0">
+                                    </Link>
+                                    <Link href="#0">
                                         <i className="fa-brands fa-behance"></i>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

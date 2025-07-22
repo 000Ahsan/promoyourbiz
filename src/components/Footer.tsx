@@ -1,5 +1,8 @@
 'use client';
 
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="footer-sa pb-80">
@@ -7,9 +10,9 @@ export default function Footer() {
             <div className="sec-head mb-80">
                 <div className="row">
                     <div className="col-lg-5">
-                        <a href="#" className="logo md-mb80">
-                            <img src="assets/imgs/Logo-light.svg" alt="" />
-                        </a>
+                        <Link href="#" className="logo md-mb80">
+                            <Image src="assets/imgs/Logo-light.svg" alt="" />
+                        </Link>
                     </div>
                     <div className="col-lg-6">
                         <h3 className="text-indent">Empowering brands and simplifying digital experiences through strategic design, clean code, and smart marketing.
@@ -38,21 +41,21 @@ export default function Footer() {
                     </div>
                     <div className="col-lg-6 offset-lg-5">
                         <div className="social-icon">
-                            <a href="#0">
+                            <Link href="#0">
                                 <i className="fa-brands fa-x-twitter"></i>
-                            </a>
-                            <a href="#0">
+                            </Link>
+                            <Link href="#0">
                                 <i className="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="#0">
+                            </Link>
+                            <Link href="#0">
                                 <i className="fa-brands fa-dribbble"></i>
-                            </a>
-                            <a href="#0">
+                            </Link>
+                            <Link href="#0">
                                 <i className="fa-brands fa-behance"></i>
-                            </a>
-                            <a href="#0">
+                            </Link>
+                            <Link href="#0">
                                 <i className="fa-brands fa-github"></i>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -63,15 +66,15 @@ export default function Footer() {
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="copy sub-color md-mb50">
-                            <p>© 2025-26 <a href="#0">Promo Your Biz</a>. All Right Reserved</p>
+                            <p>© 2025-26 <Link href="#0">Promo Your Biz</Link>. All Right Reserved</p>
                         </div>
                     </div>
                     <div className="col-lg-4 d-flex justify-content-end">
                         <div className="links sub-color d-flex justify-content-between">
-                            <a href="#" className="active">Home</a>
-                            <a href="../inner_pages/portfolio-standard.html">Works</a>
-                            <a href="../inner_pages/about.html">Studio</a>
-                            <a href="../inner_pages/blog-standard.html">News</a>
+                            <Link href="#" className="active">Home</Link>
+                            <Link href="../inner_pages/portfolio-standard.html">Works</Link>
+                            <Link href="../inner_pages/about.html">Studio</Link>
+                            <Link href="../inner_pages/blog-standard.html">News</Link>
                         </div>
                     </div>
                 </div>

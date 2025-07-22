@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main>
@@ -12,11 +15,11 @@ export default function Home() {
                             <div className="col-lg-6 imgs-cube">
                                 <div className="imgs">
                                     <div className="circle">
-                                        <img src="assets/imgs/header/circle-badge.svg" alt="" />
+                                        <Image src="assets/imgs/header/circle-badge.svg" alt="" />
                                     </div>
                                 </div>
                                 <div className="img fit-img radius-30 mt-50">
-                                    <img src="assets/imgs/header/1.jpg" alt="" />
+                                    <Image src="assets/imgs/header/1.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -41,7 +44,7 @@ export default function Home() {
                             </svg>
                         </div>
                     </div>
-                    <img src="assets/imgs/header/2.jpg" alt="" />
+                    <Image src="assets/imgs/header/2.jpg" alt="" />
                     <div className="text">
                         <span className="fz-12 text-u mb-10">Since <br /> 2018</span>
                         <p>We convert <br />
@@ -79,14 +82,14 @@ export default function Home() {
                         <div className="col-lg-8">
                             <h3 className="text-indent">Our team of experts focus on client and customer satisfaction as the ultimate goal for our projects. This is one of the many reasons why our work is globally acclaimed and recognized.
                             </h3>
-                            <a href="../inner_pages/about.html" className="crv-butn mt-40">
+                            <Link href="../inner_pages/about.html" className="crv-butn mt-40">
                                 <div className="d-flex">
                                     <span className="text">More About Us</span>
                                     <span className="icon">
-                                        <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                        <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                     </span>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -98,36 +101,36 @@ export default function Home() {
                 <div className="slide-har st1">
                     <div className="box">
                         <div className="item">
-                            <img src="assets/imgs/brands/1.svg" alt="" />
+                            <Image src="assets/imgs/brands/1.svg" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/imgs/brands/2.svg" alt="" />
+                            <Image src="assets/imgs/brands/2.svg" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/imgs/brands/3.svg" alt="" />
+                            <Image src="assets/imgs/brands/3.svg" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/imgs/brands/4.svg" alt="" />
+                            <Image src="assets/imgs/brands/4.svg" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/imgs/brands/5.svg" alt="" />
+                            <Image src="assets/imgs/brands/5.svg" alt="" />
                         </div>
                     </div>
                     <div className="box">
                         <div className="item">
-                            <img src="assets/imgs/brands/1.svg" alt="" />
+                            <Image src="assets/imgs/brands/1.svg" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/imgs/brands/2.svg" alt="" />
+                            <Image src="assets/imgs/brands/2.svg" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/imgs/brands/3.svg" alt="" />
+                            <Image src="assets/imgs/brands/3.svg" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/imgs/brands/4.svg" alt="" />
+                            <Image src="assets/imgs/brands/4.svg" alt="" />
                         </div>
                         <div className="item">
-                            <img src="assets/imgs/brands/5.svg" alt="" />
+                            <Image src="assets/imgs/brands/5.svg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -140,11 +143,11 @@ export default function Home() {
                     <div className="items col-lg-6 order-md-2">
                         <div className="item">
                             <div className="img">
-                                <img src="assets/imgs/works/2.jpg" alt="" />
+                                <Image src="assets/imgs/works/2.jpg" alt="" />
                                 <div className="tags">
-                                    <a href="#0">Website</a>
-                                    <a href="#0">UI/UX</a>
-                                    <a href="#0">illustration</a>
+                                    <Link href="#0">Website</Link>
+                                    <Link href="#0">UI/UX</Link>
+                                    <Link href="#0">illustration</Link>
                                 </div>
                             </div>
                             <div className="cont mt-30">
@@ -154,7 +157,7 @@ export default function Home() {
                                     <span>WordPress</span>
                                 </div>
                                 <h6>
-                                    <a href="../inner_pages/project-details.html">Smart Choice Builders</a>
+                                    <Link href="../inner_pages/project-details.html">Smart Choice Builders</Link>
                                 </h6>
                             </div>
                         </div>
@@ -168,11 +171,11 @@ export default function Home() {
                     <div className="items col-lg-6 order-md-2">
                         <div className="item">
                             <div className="img">
-                                <img src="assets/imgs/works/1.jpg" alt="" />
+                                <Image src="assets/imgs/works/1.jpg" alt="" />
                                 <div className="tags">
-                                    <a href="#0">Development</a>
-                                    <a href="#0">UI/UX</a>
-                                    <a href="#0">illustration</a>
+                                    <Link href="#0">Website</Link>
+                                    <Link href="#0">UI/UX</Link>
+                                    <Link href="#0">illustration</Link>
                                 </div>
                             </div>
                             <div className="cont mt-30">
@@ -182,7 +185,7 @@ export default function Home() {
                                     <span>WordPress</span>
                                 </div>
                                 <h6>
-                                    <a href="../inner_pages/project-details.html">Metro Contracting Ltd.</a>
+                                    <Link href="../inner_pages/project-details.html">Metro Contracting Ltd.</Link>
                                 </h6>
                             </div>
                         </div>
@@ -190,11 +193,11 @@ export default function Home() {
                     <div className="items col-lg-6 order-md-2">
                         <div className="item">
                             <div className="img">
-                                <img src="assets/imgs/works/3.jpg" alt="" />
+                                <Image src="assets/imgs/works/3.jpg" alt="" />
                                 <div className="tags">
-                                    <a href="#0">Development</a>
-                                    <a href="#0">UI/UX</a>
-                                    <a href="#0">illustration</a>
+                                <Link href="#0">Website</Link>
+                                    <Link href="#0">UI/UX</Link>
+                                    <Link href="#0">illustration</Link>
                                 </div>
                             </div>
                             <div className="cont mt-30">
@@ -204,7 +207,7 @@ export default function Home() {
                                     <span>WordPress</span>
                                 </div>
                                 <h6>
-                                    <a href="../inner_pages/project-details.html">313 Consultancy</a>
+                                    <Link href="../inner_pages/project-details.html">313 Consultancy</Link>
                                 </h6>
                             </div>
                         </div>
@@ -212,11 +215,11 @@ export default function Home() {
                     <div className="items col-lg-6 order-md-2">
                         <div className="item">
                             <div className="img">
-                                <img src="assets/imgs/works/4.jpg" alt="" />
+                                <Image src="assets/imgs/works/4.jpg" alt="" />
                                 <div className="tags">
-                                    <a href="#0">Development</a>
-                                    <a href="#0">UI/UX</a>
-                                    <a href="#0">illustration</a>
+                                    <Link href="#0">Website</Link>
+                                    <Link href="#0">UI/UX</Link>
+                                    <Link href="#0">illustration</Link>
                                 </div>
                             </div>
                             <div className="cont mt-30">
@@ -226,20 +229,20 @@ export default function Home() {
                                     <span>WordPress</span>
                                 </div>
                                 <h6>
-                                    <a href="../inner_pages/project-details.html">South Ridge Disposal Ltd</a>
+                                    <Link href="../inner_pages/project-details.html">South Ridge Disposal Ltd</Link>
                                 </h6>
                             </div>
                         </div>
                     </div>
                     <div className="items col-lg-6 order-md-2">
-                        <a href="../inner_pages/portfolio-gallery.html" className="crv-butn mt-100">
+                        <Link href="../inner_pages/portfolio-gallery.html" className="crv-butn mt-100">
                             <div className="d-flex">
                                 <span className="text">View all Projects</span>
                                 <span className="icon">
-                                    <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                    <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                 </span>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -259,14 +262,14 @@ export default function Home() {
                             <div className="text">
                                 <p>We are a brand marketing agency with expertise, and we’re on a mission
                                     to help you take the next step in your business.</p>
-                                <a href="../inner_pages/services.html" className="crv-butn mt-40">
+                                <Link href="../inner_pages/services.html" className="crv-butn mt-40">
                                     <div className="d-flex">
                                         <span className="text">Learn More</span>
                                         <span className="icon">
-                                            <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                            <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                         </span>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -282,7 +285,7 @@ export default function Home() {
                                     <p>Brand Identity, Stragegy & Consult, <br /> Position, Rebrand</p>
                                     <div>
                                         <div className="icon invert">
-                                            <img src="../common/imgs/icons/crown-solid.svg" alt="" />
+                                            <Image src="../common/imgs/icons/crown-solid.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -297,7 +300,7 @@ export default function Home() {
                                     <p>Brand Identity, Stragegy & Consult, <br /> Position, Rebrand</p>
                                     <div>
                                         <div className="icon invert">
-                                            <img src="../common/imgs/icons/bezier-curve-solid.svg" alt="" />
+                                            <Image src="../common/imgs/icons/bezier-curve-solid.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -312,7 +315,7 @@ export default function Home() {
                                     <p>Brand Identity, Stragegy & Consult, <br /> Position, Rebrand</p>
                                     <div>
                                         <div className="icon invert">
-                                            <img src="../common/imgs/icons/code-solid.svg" alt="" />
+                                            <Image src="../common/imgs/icons/code-solid.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -327,7 +330,7 @@ export default function Home() {
                                     <p>Brand Identity, Stragegy & Consult, <br /> Position, Rebrand</p>
                                     <div>
                                         <div className="icon invert">
-                                            <img src="../common/imgs/icons/chart-line-solid.svg" alt="" />
+                                            <Image src="../common/imgs/icons/chart-line-solid.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -344,19 +347,19 @@ export default function Home() {
                     <div className="states">
                         <div className="imgs mb-30">
                             <div className="img fit-img">
-                                <img src="assets/imgs/testim/avatar1.jpg" alt="" />
+                                <Image src="assets/imgs/testim/avatar1.jpg" alt="" />
                             </div>
-                            <a href="#0" className="icon">
-                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
-                            </a>
+                            <Link href="#0" className="icon">
+                                <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                            </Link>
                         </div>
                         <h3 className="mb-15">7k+ Clients</h3>
                         <p>Approaches are prominently featured on many architect websites.</p>
                     </div>
                     <div className="play-button">
-                        <a href="https://youtu.be/AzwC6umvd1s" className="vid">
+                        <Link href="https://youtu.be/AzwC6umvd1s" className="vid">
                             <i className="fas fa-play"></i>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -390,7 +393,7 @@ export default function Home() {
                                 <div className="d-flex mb-30">
                                     <div className="img">
                                         <div className="fit-img">
-                                            <img src="assets/imgs/testim/avatar1.jpg" alt="" />
+                                            <Image src="assets/imgs/testim/avatar1.jpg" alt="" />
                                         </div>
                                     </div>
                                     <div className="ml-auto">
@@ -415,7 +418,7 @@ export default function Home() {
                                 <div className="d-flex mb-30">
                                     <div className="img">
                                         <div className="fit-img">
-                                            <img src="assets/imgs/testim/avatar2.jpg" alt="" />
+                                            <Image src="assets/imgs/testim/avatar2.jpg" alt="" />
                                         </div>
                                     </div>
                                     <div className="ml-auto">
@@ -440,7 +443,7 @@ export default function Home() {
                                 <div className="d-flex mb-30">
                                     <div className="img">
                                         <div className="fit-img">
-                                            <img src="assets/imgs/testim/avatar3.jpg" alt="" />
+                                            <Image src="assets/imgs/testim/avatar3.jpg" alt="" />
                                         </div>
                                     </div>
                                     <div className="ml-auto">
@@ -465,7 +468,7 @@ export default function Home() {
                                 <div className="d-flex mb-30">
                                     <div className="img">
                                         <div className="fit-img">
-                                            <img src="assets/imgs/testim/avatar4.jpg" alt="" />
+                                            <Image src="assets/imgs/testim/avatar4.jpg" alt="" />
                                         </div>
                                     </div>
                                     <div className="ml-auto">
@@ -490,7 +493,7 @@ export default function Home() {
                                 <div className="d-flex mb-30">
                                     <div className="img">
                                         <div className="fit-img">
-                                            <img src="assets/imgs/testim/avatar3.jpg" alt="" />
+                                            <Image src="assets/imgs/testim/avatar3.jpg" alt="" />
                                         </div>
                                     </div>
                                     <div className="ml-auto">
@@ -534,19 +537,19 @@ export default function Home() {
                     <div className="col-lg-6">
                         <div className="item md-mb50">
                             <div className="img fit-img">
-                                <img src="assets/imgs/blog/1.jpg" alt="" />
+                                <Image src="assets/imgs/blog/1.jpg" alt="" />
                             </div>
                             <div className="cont mt-30">
                                 <h6>
-                                    <a href="../inner_pages/blog-details.html">How to Create a Brand Identity for Your Business <br /> using AI?</a>
+                                    <Link href="../inner_pages/blog-details.html">How to Create a Brand Identity for Your Business <br /> using AI?</Link>
                                 </h6>
                                 <div className="info d-flex align-items-center mt-20">
-                                    <a href="#0" className="tag">
+                                    <Link href="#0" className="tag">
                                         <span>Design Trends</span>
-                                    </a>
-                                    <a href="#0" className="date">
+                                    </Link>
+                                    <Link href="#0" className="date">
                                         <span>/ May 15, 2024</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -554,19 +557,19 @@ export default function Home() {
                     <div className="col-lg-6">
                         <div className="item">
                             <div className="img fit-img">
-                                <img src="assets/imgs/blog/2.jpg" alt="" />
+                                <Image src="assets/imgs/blog/2.jpg" alt="" />
                             </div>
                             <div className="cont mt-30">
                                 <h6>
-                                    <a href="../inner_pages/blog-details.html">Common UX painpoints in Dashboard-related <br /> projects</a>
+                                    <Link href="../inner_pages/blog-details.html">Common UX painpoints in Dashboard-related <br /> projects</Link>
                                 </h6>
                                 <div className="info d-flex align-items-center mt-20">
-                                    <a href="#0" className="tag">
+                                    <Link href="#0" className="tag">
                                         <span>Experience</span>
-                                    </a>
-                                    <a href="#0" className="date">
+                                    </Link>
+                                    <Link href="#0" className="date">
                                         <span>/ May 15, 2024</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Services() {
     return (
         <main>
@@ -85,14 +88,14 @@ export default function Services() {
                                 <div className="d-flex align-items-center">
                                     <h6 className="sub-head">Our Services</h6>
                                     <div className="ml-auto">
-                                        <a href="#0" className="butn butn-md butn-bord butn-rounded">
+                                        <Link href="#0" className="butn butn-md butn-bord butn-rounded">
                                             <div className="d-flex align-items-center">
                                                 <span>View More</span>
                                                 <span className="icon ml-10">
-                                                    <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                                    <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                                 </span>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -112,14 +115,14 @@ export default function Services() {
                                 <div className="ml-auto">
                                     <div className="text-right">
                                         <div className="icon">
-                                            <img src="../common/imgs/icons/crown-solid.svg" alt="" />
+                                            <Image src="../common/imgs/icons/crown-solid.svg" alt="" />
                                             <span className="arrow">
-                                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                                <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                             </span>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#0" className="alink"></a>
+                                <Link href="#0" className="alink"></Link>
                             </div>
                             <div className="item d-flex align-items-end justify-content-between">
                                 <div className="numb">
@@ -137,14 +140,14 @@ export default function Services() {
                                 <div className="ml-auto">
                                     <div className="text-right">
                                         <div className="icon">
-                                            <img src="../common/imgs/icons/bezier-curve-solid.svg" alt="" />
+                                            <Image src="../common/imgs/icons/bezier-curve-solid.svg" alt="" />
                                             <span className="arrow">
-                                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                                <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                             </span>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#0" className="alink"></a>
+                                <Link href="#0" className="alink"></Link>
                             </div>
                             <div className="item d-flex align-items-end justify-content-between">
                                 <div className="numb">
@@ -162,14 +165,14 @@ export default function Services() {
                                 <div className="ml-auto">
                                     <div className="text-right">
                                         <div className="icon">
-                                            <img src="../common/imgs/icons/code-solid.svg" alt="" />
+                                            <Image src="../common/imgs/icons/code-solid.svg" alt="" />
                                             <span className="arrow">
-                                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                                <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                             </span>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#0" className="alink"></a>
+                                <Link href="#0" className="alink"></Link>
                             </div>
                             <div className="item d-flex align-items-end justify-content-between">
                                 <div className="numb">
@@ -187,14 +190,14 @@ export default function Services() {
                                 <div className="ml-auto">
                                     <div className="text-right">
                                         <div className="icon">
-                                            <img src="../common/imgs/icons/chart-line-solid.svg" alt="" />
+                                            <Image src="../common/imgs/icons/chart-line-solid.svg" alt="" />
                                             <span className="arrow">
-                                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                                <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                             </span>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#0" className="alink"></a>
+                                <Link href="#0" className="alink"></Link>
                             </div>
                         </div>
                     </div>

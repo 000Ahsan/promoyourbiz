@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Contact() {
     return (
         <main>
@@ -23,11 +26,11 @@ export default function Contact() {
                             <div className="full-width md-mb80">
                                 <div className="sec-head md-mb80">
                                     <h2 className="text-u">
-                                        Let's make your <br /> brand <span className="fw-200">
+                                        Lets make your <br /> brand <span className="fw-200">
                                             brilliant!</span>
                                     </h2>
                                     <p className="mt-20 mb-20">If you would like to work with us or just want to get in
-                                        touch, we’d love to hear from you!</p>
+                                        touch, we would love to hear from you!</p>
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="morinfo mt-30">
@@ -43,22 +46,22 @@ export default function Contact() {
                                         </div>
                                     </div>
                                     <div className="phone fz-30 fw-600 mt-30 underline main-color">
-                                        <a href="#0">+1-877-246-0914</a>
+                                        <Link href="#0">+1-877-246-0914</Link>
                                     </div>
                                 </div>
                                 <ul className="rest social-text d-flex mt-60 fz-16">
                                     <li className="mr-30">
-                                        <a href="#0" className="hover-this"><span className="hover-anim">Facebook</span></a>
+                                        <Link href="#0" className="hover-this"><span className="hover-anim">Facebook</span></Link>
                                     </li>
                                     <li className="mr-30">
-                                        <a href="#0" className="hover-this"><span className="hover-anim">Twitter</span></a>
+                                        <Link href="#0" className="hover-this"><span className="hover-anim">Twitter</span></Link>
                                     </li>
                                     <li className="mr-30">
-                                        <a href="#0" className="hover-this"><span className="hover-anim">LinkedIn</span></a>
+                                        <Link href="#0" className="hover-this"><span className="hover-anim">LinkedIn</span></Link>
                                     </li>
                                     <li>
-                                        <a href="#0" className="hover-this"><span
-                                                className="hover-anim">Instagram</span></a>
+                                        <Link href="#0" className="hover-this"><span
+                                                className="hover-anim">Instagram</span></Link>
                                     </li>
                                 </ul>
                             </div>
@@ -103,9 +106,9 @@ export default function Contact() {
                                             <div className="mt-30">
                                                 <button type="submit" className="butn butn-md butn-bord butn-rounded">
                                                     <div className="d-flex align-items-center">
-                                                        <span>Let's Talking</span>
+                                                        <span>Lets Talking</span>
                                                         <span className="icon ml-10">
-                                                            <img src="../common/imgs/icons/arrow-top-right.svg"
+                                                            <Image src="../common/imgs/icons/arrow-top-right.svg"
                                                                 alt="" />
                                                         </span>
                                                     </div>

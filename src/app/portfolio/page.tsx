@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function About() {
     return (
         <main>
@@ -7,7 +10,7 @@ export default function About() {
                         <h1>Work Standard</h1>
                         <div className="path mt-15">
                             <span>
-                                <a href="#">Home</a>
+                                <Link href="#">Home</Link>
                             </span>
                             <span><i className="fa-solid fa-arrow-right-long"></i></span>
                             <span className="main-color">Portfolio</span>
@@ -27,13 +30,13 @@ export default function About() {
                                         <span>branding, ui/ux design</span>
                                     </div>
                                     <div className="ml-auto">
-                                        <a href="#0">
+                                        <Link href="#0">
                                             <i className="fa-solid fa-chevron-right"></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <img src="assets/imgs/portfolio/works1/1.jpg" alt="" />
+                                    <Image src="assets/imgs/portfolio/works1/1.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -45,13 +48,13 @@ export default function About() {
                                         <span>branding, ui/ux design, <br /> motion, seo</span>
                                     </div>
                                     <div className="ml-auto">
-                                        <a href="#0">
+                                        <Link href="#0">
                                             <i className="fa-solid fa-chevron-right"></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <img src="assets/imgs/portfolio/works1/2.jpg" alt="" />
+                                    <Image src="assets/imgs/portfolio/works1/2.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -63,13 +66,13 @@ export default function About() {
                                         <span>ui/ux design, Illustration <br /> photography,</span>
                                     </div>
                                     <div className="ml-auto">
-                                        <a href="#0">
+                                        <Link href="#0">
                                             <i className="fa-solid fa-chevron-right"></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <img src="assets/imgs/portfolio/works1/3.jpg" alt="" />
+                                    <Image src="assets/imgs/portfolio/works1/3.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -81,13 +84,13 @@ export default function About() {
                                         <span>branding, ui/ux design, <br /> motion, seo</span>
                                     </div>
                                     <div className="ml-auto">
-                                        <a href="#0">
+                                        <Link href="#0">
                                             <i className="fa-solid fa-chevron-right"></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <img src="assets/imgs/portfolio/works1/4.jpg" alt="" />
+                                    <Image src="assets/imgs/portfolio/works1/4.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -99,13 +102,13 @@ export default function About() {
                                         <span>UI/UX Designm Landing Page, <br /> Webflow, Framer</span>
                                     </div>
                                     <div className="ml-auto">
-                                        <a href="#0">
+                                        <Link href="#0">
                                             <i className="fa-solid fa-chevron-right"></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <img src="assets/imgs/portfolio/works1/6.jpg" alt="" />
+                                    <Image src="assets/imgs/portfolio/works1/6.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -117,13 +120,13 @@ export default function About() {
                                         <span>branding, rebrand, postion <br /> strategy, animation</span>
                                     </div>
                                     <div className="ml-auto">
-                                        <a href="#0">
+                                        <Link href="#0">
                                             <i className="fa-solid fa-chevron-right"></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <img src="assets/imgs/portfolio/works1/5.jpg" alt="" />
+                                    <Image src="assets/imgs/portfolio/works1/5.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -135,13 +138,13 @@ export default function About() {
                                         <span>UI/Ux Design, Webflow</span>
                                     </div>
                                     <div className="ml-auto">
-                                        <a href="#0">
+                                        <Link href="#0">
                                             <i className="fa-solid fa-chevron-right"></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <img src="assets/imgs/portfolio/works1/9.jpg" alt="" />
+                                    <Image src="assets/imgs/portfolio/works1/9.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -153,13 +156,13 @@ export default function About() {
                                         <span>ui/ux design, mobile app, <br /> motion, seo</span>
                                     </div>
                                     <div className="ml-auto">
-                                        <a href="#0">
+                                        <Link href="#0">
                                             <i className="fa-solid fa-chevron-right"></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <img src="assets/imgs/portfolio/works1/7.jpg" alt="" />
+                                    <Image src="assets/imgs/portfolio/works1/7.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -171,13 +174,13 @@ export default function About() {
                                         <span>branding, Graphic Design</span>
                                     </div>
                                     <div className="ml-auto">
-                                        <a href="#0">
+                                        <Link href="#0">
                                             <i className="fa-solid fa-chevron-right"></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <img src="assets/imgs/portfolio/works1/8.jpg" alt="" />
+                                    <Image src="assets/imgs/portfolio/works1/8.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
