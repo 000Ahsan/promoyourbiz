@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
@@ -7,7 +6,7 @@ export default function About() {
             <header className="work-hed">
                 <div className="container section-padding">
                     <div className="caption text-center">
-                        <h1>Work Standard</h1>
+                        <h1>What We Delivered!</h1>
                         <div className="path mt-15">
                             <span>
                                 <Link href="#">Home</Link>
@@ -26,17 +25,17 @@ export default function About() {
                             <div className="item">
                                 <div className="cont d-flex align-items-center">
                                     <div>
-                                        <h5>Swat Co.</h5>
-                                        <span>branding, ui/ux design</span>
+                                        <h5>Pacific Stairs & Railings</h5>
+                                        <span>Website</span>
                                     </div>
                                     <div className="ml-auto">
-                                        <Link href="#0">
+                                        <Link href="https://pacific-stairs.sayanisbiz.com/">
                                             <i className="fa-solid fa-chevron-right"></i>
                                         </Link>
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <Image src="assets/imgs/portfolio/works1/1.jpg" alt="" />
+                                    <img src="/assets/imgs/works/1.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -44,17 +43,17 @@ export default function About() {
                             <div className="item">
                                 <div className="cont d-flex align-items-center">
                                     <div>
-                                        <h5>ZumaCons Firm</h5>
-                                        <span>branding, ui/ux design, <br /> motion, seo</span>
+                                        <h5>Smart Choice Builders</h5>
+                                        <span>Website</span>
                                     </div>
                                     <div className="ml-auto">
-                                        <Link href="#0">
+                                        <Link href="https://smartchoicebuilders.ca/">
                                             <i className="fa-solid fa-chevron-right"></i>
                                         </Link>
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <Image src="assets/imgs/portfolio/works1/2.jpg" alt="" />
+                                    <img src="/assets/imgs/works/2.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -62,17 +61,17 @@ export default function About() {
                             <div className="item">
                                 <div className="cont d-flex align-items-center">
                                     <div>
-                                        <h5>Newz Magazine Site</h5>
-                                        <span>ui/ux design, Illustration <br /> photography,</span>
+                                        <h5>313 Consultancy</h5>
+                                        <span>Website</span>
                                     </div>
                                     <div className="ml-auto">
-                                        <Link href="#0">
+                                        <Link href="https://313consultancy.org/">
                                             <i className="fa-solid fa-chevron-right"></i>
                                         </Link>
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <Image src="assets/imgs/portfolio/works1/3.jpg" alt="" />
+                                    <img src="/assets/imgs/works/3.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -80,17 +79,17 @@ export default function About() {
                             <div className="item">
                                 <div className="cont d-flex align-items-center">
                                     <div>
-                                        <h5>Archin</h5>
-                                        <span>branding, ui/ux design, <br /> motion, seo</span>
+                                        <h5>South Ridge Disposal Ltd.</h5>
+                                        <span>Website</span>
                                     </div>
                                     <div className="ml-auto">
-                                        <Link href="#0">
+                                        <Link href="https://southridgedisposal.com/">
                                             <i className="fa-solid fa-chevron-right"></i>
                                         </Link>
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <Image src="assets/imgs/portfolio/works1/4.jpg" alt="" />
+                                    <img src="/assets/imgs/works/4.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -98,8 +97,8 @@ export default function About() {
                             <div className="item">
                                 <div className="cont d-flex align-items-center">
                                     <div>
-                                        <h5>Jorger Clarkson</h5>
-                                        <span>UI/UX Designm Landing Page, <br /> Webflow, Framer</span>
+                                        <h5>Vernon Stucco & Plaster Ltd.</h5>
+                                        <span>Website</span>
                                     </div>
                                     <div className="ml-auto">
                                         <Link href="#0">
@@ -108,7 +107,7 @@ export default function About() {
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <Image src="assets/imgs/portfolio/works1/6.jpg" alt="" />
+                                    <img src="/assets/imgs/works/5.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -116,71 +115,17 @@ export default function About() {
                             <div className="item">
                                 <div className="cont d-flex align-items-center">
                                     <div>
-                                        <h5>LW Rebrand</h5>
-                                        <span>branding, rebrand, postion <br /> strategy, animation</span>
+                                        <h5>PQ Management</h5>
+                                        <span>Website</span>
                                     </div>
                                     <div className="ml-auto">
-                                        <Link href="#0">
+                                        <Link href="https://pqmgmt.com/">
                                             <i className="fa-solid fa-chevron-right"></i>
                                         </Link>
                                     </div>
                                 </div>
                                 <div className="img">
-                                    <Image src="assets/imgs/portfolio/works1/5.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 items">
-                            <div className="item">
-                                <div className="cont d-flex align-items-center">
-                                    <div>
-                                        <h5>Boat News</h5>
-                                        <span>UI/Ux Design, Webflow</span>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <Link href="#0">
-                                            <i className="fa-solid fa-chevron-right"></i>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="img">
-                                    <Image src="assets/imgs/portfolio/works1/9.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 items">
-                            <div className="item">
-                                <div className="cont d-flex align-items-center">
-                                    <div>
-                                        <h5>The Unerio</h5>
-                                        <span>ui/ux design, mobile app, <br /> motion, seo</span>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <Link href="#0">
-                                            <i className="fa-solid fa-chevron-right"></i>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="img">
-                                    <Image src="assets/imgs/portfolio/works1/7.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 items">
-                            <div className="item">
-                                <div className="cont d-flex align-items-center">
-                                    <div>
-                                        <h5>Arc Garden</h5>
-                                        <span>branding, Graphic Design</span>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <Link href="#0">
-                                            <i className="fa-solid fa-chevron-right"></i>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="img">
-                                    <Image src="assets/imgs/portfolio/works1/8.jpg" alt="" />
+                                    <img src="/assets/imgs/works/6.jpg" alt="" />
                                 </div>
                             </div>
                         </div>

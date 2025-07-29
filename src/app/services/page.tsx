@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Services() {
@@ -87,16 +86,6 @@ export default function Services() {
                             <div className="sec-head mb-80 pb-30 bord-thin-bottom">
                                 <div className="d-flex align-items-center">
                                     <h6 className="sub-head">Our Services</h6>
-                                    <div className="ml-auto">
-                                        <Link href="#0" className="butn butn-md butn-bord butn-rounded">
-                                            <div className="d-flex align-items-center">
-                                                <span>View More</span>
-                                                <span className="icon ml-10">
-                                                    <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
-                                                </span>
-                                            </div>
-                                        </Link>
-                                    </div>
                                 </div>
                             </div>
                             <div className="item d-flex align-items-end justify-content-between">
@@ -109,15 +98,15 @@ export default function Services() {
                                         <span>Brand Identity</span>
                                         <span>Logo Design</span>
                                         <span>Brand Strategy</span>
-                                        <span>Art Direction</span>
+                                        <span>Visual Language</span>
                                     </div>
                                 </div>
                                 <div className="ml-auto">
                                     <div className="text-right">
                                         <div className="icon">
-                                            <Image src="../common/imgs/icons/crown-solid.svg" alt="" />
+                                            <img src="../common/imgs/icons/crown-solid.svg" alt="" />
                                             <span className="arrow">
-                                                <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                             </span>
                                         </div>
                                     </div>
@@ -131,18 +120,18 @@ export default function Services() {
                                 <div className="title">
                                     <h2>Design</h2>
                                     <div className="list">
+                                        <span>UI/UX Design</span>
+                                        <span>Web & App Design</span>
                                         <span>Brand Identity</span>
-                                        <span>Logo Design</span>
-                                        <span>Brand Strategy</span>
-                                        <span>Art Direction</span>
+                                        <span>Visual Direction</span>
                                     </div>
                                 </div>
                                 <div className="ml-auto">
                                     <div className="text-right">
                                         <div className="icon">
-                                            <Image src="../common/imgs/icons/bezier-curve-solid.svg" alt="" />
+                                            <img src="../common/imgs/icons/bezier-curve-solid.svg" alt="" />
                                             <span className="arrow">
-                                                <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                             </span>
                                         </div>
                                     </div>
@@ -156,18 +145,18 @@ export default function Services() {
                                 <div className="title">
                                     <h2>Code</h2>
                                     <div className="list">
-                                        <span>Brand Identity</span>
-                                        <span>Logo Design</span>
-                                        <span>Brand Strategy</span>
-                                        <span>Art Direction</span>
+                                        <span>Website Development</span>
+                                        <span>Web Applications</span>
+                                        <span>Mobile Apps</span>
+                                        <span>CMS & E-commerce</span>
                                     </div>
                                 </div>
                                 <div className="ml-auto">
                                     <div className="text-right">
                                         <div className="icon">
-                                            <Image src="../common/imgs/icons/code-solid.svg" alt="" />
+                                            <img src="../common/imgs/icons/code-solid.svg" alt="" />
                                             <span className="arrow">
-                                                <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                             </span>
                                         </div>
                                     </div>
@@ -181,18 +170,18 @@ export default function Services() {
                                 <div className="title">
                                     <h2>Growth</h2>
                                     <div className="list">
-                                        <span>Brand Identity</span>
-                                        <span>Logo Design</span>
-                                        <span>Brand Strategy</span>
-                                        <span>Art Direction</span>
+                                        <span>SEO Optimization</span>
+                                        <span>Social Media Marketing</span>
+                                        <span>Performance Campaigns</span>
+                                        <span>Analytics & Strategy</span>
                                     </div>
                                 </div>
                                 <div className="ml-auto">
                                     <div className="text-right">
                                         <div className="icon">
-                                            <Image src="../common/imgs/icons/chart-line-solid.svg" alt="" />
+                                            <img src="../common/imgs/icons/chart-line-solid.svg" alt="" />
                                             <span className="arrow">
-                                                <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                             </span>
                                         </div>
                                     </div>

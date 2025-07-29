@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -11,7 +10,7 @@ export default function Footer() {
                 <div className="row">
                     <div className="col-lg-5">
                         <Link href="#" className="logo md-mb80">
-                            <Image src="assets/imgs/Logo-light.svg" alt="" />
+                            <img src="/assets/imgs/Logo-light.svg" alt="" />
                         </Link>
                     </div>
                     <div className="col-lg-6">
@@ -71,10 +70,10 @@ export default function Footer() {
                     </div>
                     <div className="col-lg-4 d-flex justify-content-end">
                         <div className="links sub-color d-flex justify-content-between">
-                            <Link href="#" className="active">Home</Link>
-                            <Link href="../inner_pages/portfolio-standard.html">Works</Link>
-                            <Link href="../inner_pages/about.html">Studio</Link>
-                            <Link href="../inner_pages/blog-standard.html">News</Link>
+                            <Link href="/">Home</Link>
+                            <Link href="/about">About</Link>
+                            <Link href="/services">Services</Link>
+                            <Link href="/portfolio">Portfolio</Link>
                         </div>
                     </div>
                 </div>

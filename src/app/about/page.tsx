@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
@@ -11,7 +10,7 @@ export default function About() {
                         <div className="row justify-content-end">
                             <div className="col-lg-5">
                                 <div className="text mt-30">
-                                    <p>Building standout digital experiences requires more than just technical skill — it demands a deep understanding of each brand’s unique identity. With a keen eye for design and a passion for innovation, we craft websites, apps, and strategies that capture attention and drive growth.</p>
+                                    <p>Building standout digital experiences requires more than just technical skill — it demands a deep understanding of each brands unique identity. With a keen eye for design and a passion for innovation, we craft websites, apps, and strategies that capture attention and drive growth.</p>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +74,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className="fit-img radius-15">
-                        <Image src="assets/imgs/about/header/1.jpg" alt="" />
+                        <img src="/assets/imgs/about/header/1.jpg" alt="" />
                     </div>
                 </div>
             </header>
@@ -93,13 +92,13 @@ export default function About() {
                                 </div>
                                 <div className="col-lg-3">
                                     <div className="text">
-                                        <p>We’re a full-service digital agency specializing in design, development, and growth marketing.
-                                        Whether you need a standout brand, a high-performing website, or strategies that drive traffic and conversions — we’re here to take your business to the next level.</p>
-                                        <Link href="#0" className="crv-butn mt-40">
+                                        <p>We are a full-service digital agency specializing in design, development, and growth marketing.
+                                        Whether you need a standout brand, a high-performing website, or strategies that drive traffic and conversions — we are here to take your business to the next level.</p>
+                                        <Link href="/services" className="crv-butn mt-40">
                                             <div className="d-flex">
                                                 <span className="text">Learn More</span>
                                                 <span className="icon">
-                                                    <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                                    <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                                 </span>
                                             </div>
                                         </Link>
@@ -109,63 +108,43 @@ export default function About() {
                         </div>
                         <div className="row justify-content-end">
                             <div className="col-lg-9">
-                                <div className="item d-flex align-items-center">
+                                <div className="item d-flex align-items-center justify-between gap-5">
                                     <div className="title">
                                         <h2>Branding</h2>
                                     </div>
                                     <div className="text ml-auto">
                                         <div className="d-flex align-items-center">
-                                            <p>Brand Identity, Strategy & Voice,<br />Logo, Positioning</p>
-                                            <div>
-                                                <div className="icon invert">
-                                                    <Image src="../common/imgs/icons/crown-solid.svg" alt="" />
-                                                </div>
-                                            </div>
+                                            <p>Branding identity, Logo Design, Brand Strategy & Visual Language</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="item d-flex align-items-center">
+                                <div className="item d-flex align-items-center justify-between gap-5">
                                     <div className="title">
                                         <h2>Design</h2>
                                     </div>
                                     <div className="text ml-auto">
                                         <div className="d-flex align-items-center">
-                                            <p>Web UI/UX, Wireframes & Mockups,<br />Visual Assets</p>
-                                            <div>
-                                                <div className="icon invert">
-                                                    <Image src="../common/imgs/icons/bezier-curve-solid.svg" alt="" />
-                                                </div>
-                                            </div>
+                                            <p>UI/UX Design, Web & App Design, Brand Identity, Visual Direction</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="item d-flex align-items-center">
+                                <div className="item d-flex align-items-center justify-between gap-5">
                                     <div className="title">
                                         <h2>Code</h2>
                                     </div>
                                     <div className="text ml-auto">
                                         <div className="d-flex align-items-center">
-                                            <p>Websites, Web Apps, APIs,<br />Clean & Scalable</p>
-                                            <div>
-                                                <div className="icon invert">
-                                                    <Image src="../common/imgs/icons/code-solid.svg" alt="" />
-                                                </div>
-                                            </div>
+                                            <p>Website Development, Web Applications, Mobile Apps, CMS & E-commerce</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="item d-flex align-items-center">
+                                <div className="item d-flex align-items-center justify-between gap-5">
                                     <div className="title">
                                         <h2>Growth</h2>
                                     </div>
                                     <div className="text ml-auto">
                                         <div className="d-flex align-items-center">
-                                            <p>SEO, Social Media, Paid Ads,<br />Content Strategy</p>
-                                            <div>
-                                                <div className="icon invert">
-                                                    <Image src="../common/imgs/icons/chart-line-solid.svg" alt="" />
-                                                </div>
-                                            </div>
+                                            <p>SEO Optimization, Social Media Marketing, Performance Campaigns, Analytics & Strategy</p>
                                         </div>
                                     </div>
                                 </div>
@@ -181,7 +160,7 @@ export default function About() {
                         <div className="col-lg-5">
                             <div className="img-box">
                                 <div className="img fit-img">
-                                    <Image src="assets/imgs/about/intro1.jpg" alt="" />
+                                    <img src="/assets/imgs/about/intro1.jpg" alt="" />
                                 </div>
                                 <div className="states">
                                     <h2 className="mb-10 fw-600">7k+</h2>
@@ -248,13 +227,13 @@ export default function About() {
                                                 <button className="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#collapse2"
                                                     aria-expanded="false" aria-controls="collapse2">
-                                                    What’s Our mission?
+                                                    Whats Our mission?
                                                 </button>
                                             </h4>
                                             <div id="collapse2" className="accordion-collapse collapse show"
                                                 aria-labelledby="heading2" data-bs-parent="#accordionExample">
                                                 <div className="accordion-body">
-                                                    <p>How quick is quick? For most design, we’re talking 2-3
+                                                    <p>How quick is quick? For most design, we are talking 2-3
                                                         business days.
                                                         We balance speed with quality,ensuring you get top-north
                                                         design
@@ -273,7 +252,7 @@ export default function About() {
                                             <div id="collapse3" className="accordion-collapse collapse"
                                                 aria-labelledby="heading3" data-bs-parent="#accordionExample">
                                                 <div className="accordion-body">
-                                                    <p>How quick is quick? For most design, we’re talking 2-3
+                                                    <p>How quick is quick? For most design, we are talking 2-3
                                                         business days.
                                                         We balance speed with quality,ensuring you get top-north
                                                         design
@@ -299,7 +278,7 @@ export default function About() {
                         </div>
                         <div className="item" data-tp-throwable-el="">
                             <div className="icon1">
-                                <Image src="assets/imgs/about/s-icon1.svg" alt="" />
+                                <img src="/assets/imgs/about/s-icon1.svg" alt="" />
                             </div>
                         </div>
                         <div className="item" data-tp-throwable-el="">
@@ -309,7 +288,7 @@ export default function About() {
                         </div>
                         <div className="item" data-tp-throwable-el="">
                             <div className="">
-                                <Image src="assets/imgs/about/s-icon2.svg" alt="" />
+                                <img src="/assets/imgs/about/s-icon2.svg" alt="" />
                             </div>
                         </div>
                         <div className="item" data-tp-throwable-el="">
@@ -331,10 +310,10 @@ export default function About() {
                                 <div className="col-lg-5">
                                     <div className="qoute-icon md-mb50">
                                         <div className="text">
-                                            <Image src="assets/imgs/about/testim/Vector_Cricle_Text.svg" alt="" />
+                                            <img src="/assets/imgs/about/testim/Vector_Cricle_Text.svg" alt="" />
                                         </div>
                                         <div className="icon">
-                                            <Image src="assets/imgs/about/testim/vector_quote.svg" alt="" />
+                                            <img src="/assets/imgs/about/testim/vector_quote.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -350,7 +329,7 @@ export default function About() {
                                                         className="info d-flex align-items-center mt-40 pt-30 bord-thin-top-light">
                                                         <div>
                                                             <div className="img-author">
-                                                                <Image src="assets/imgs/about/testim/avatar1.jpg"
+                                                                <img src="/assets/imgs/about/testim/avatar1.jpg"
                                                                     alt="" />
                                                             </div>
                                                         </div>
@@ -370,7 +349,7 @@ export default function About() {
                                                         className="info d-flex align-items-center mt-40 pt-30 bord-thin-top-light">
                                                         <div>
                                                             <div className="img-author">
-                                                                <Image src="assets/imgs/about/testim/avatar2.jpg"
+                                                                <img src="/assets/imgs/about/testim/avatar2.jpg"
                                                                     alt="" />
                                                             </div>
                                                         </div>
@@ -398,35 +377,35 @@ export default function About() {
                                 <div className="col-lg col-md-4 col-6 md-mb30">
                                     <div className="item d-flex align-items-center justify-content-center">
                                         <div className="img">
-                                            <Image src="assets/imgs/about/clients/1.svg" alt="" />
+                                            <img src="/assets/imgs/about/clients/1.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg col-md-4 col-6 md-mb30">
                                     <div className="item d-flex align-items-center justify-content-center">
                                         <div className="img">
-                                            <Image src="assets/imgs/about/clients/2.svg" alt="" />
+                                            <img src="/assets/imgs/about/clients/2.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg col-md-4 col-6 md-mb30">
                                     <div className="item d-flex align-items-center justify-content-center">
                                         <div className="img">
-                                            <Image src="assets/imgs/about/clients/3.svg" alt="" />
+                                            <img src="/assets/imgs/about/clients/3.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg col-md-4 col-6 sm-mb30">
                                     <div className="item d-flex align-items-center justify-content-center">
                                         <div className="img">
-                                            <Image src="assets/imgs/about/clients/4.svg" alt="" />
+                                            <img src="/assets/imgs/about/clients/4.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg col-md-4 col-6">
                                     <div className="item d-flex align-items-center justify-content-center">
                                         <div className="img">
-                                            <Image src="assets/imgs/about/clients/5.svg" alt="" />
+                                            <img src="/assets/imgs/about/clients/5.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -456,7 +435,7 @@ export default function About() {
                         <div className="d-flex">
                             <div>
                                 <div className="img fit-img">
-                                    <Image src="assets/imgs/about/team/1.png" alt="" />
+                                    <img src="/assets/imgs/about/team/1.png" alt="" />
                                 </div>
                             </div>
                             <div className="cont">
@@ -485,7 +464,7 @@ export default function About() {
                         <div className="d-flex">
                             <div>
                                 <div className="img fit-img">
-                                    <Image src="assets/imgs/about/team/2.png" alt="" />
+                                    <img src="/assets/imgs/about/team/2.png" alt="" />
                                 </div>
                             </div>
                             <div className="cont">
@@ -508,7 +487,7 @@ export default function About() {
                         <div className="d-flex">
                             <div>
                                 <div className="img fit-img">
-                                    <Image src="assets/imgs/about/team/3.png" alt="" />
+                                    <img src="/assets/imgs/about/team/3.png" alt="" />
                                 </div>
                             </div>
                             <div className="cont">
@@ -534,7 +513,7 @@ export default function About() {
                         <div className="d-flex">
                             <div>
                                 <div className="img fit-img">
-                                    <Image src="assets/imgs/about/team/4.png" alt="" />
+                                    <img src="/assets/imgs/about/team/4.png" alt="" />
                                 </div>
                             </div>
                             <div className="cont">

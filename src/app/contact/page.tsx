@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Contact() {
@@ -108,7 +107,7 @@ export default function Contact() {
                                                     <div className="d-flex align-items-center">
                                                         <span>Lets Talking</span>
                                                         <span className="icon ml-10">
-                                                            <Image src="../common/imgs/icons/arrow-top-right.svg"
+                                                            <img src="../common/imgs/icons/arrow-top-right.svg"
                                                                 alt="" />
                                                         </span>
                                                     </div>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -15,11 +14,11 @@ export default function Home() {
                             <div className="col-lg-6 imgs-cube">
                                 <div className="imgs">
                                     <div className="circle">
-                                        <Image src="assets/imgs/header/circle-badge.svg" alt="" />
+                                        <img src="/assets/imgs/header/circle-badge.svg" alt="" />
                                     </div>
                                 </div>
                                 <div className="img fit-img radius-30 mt-50">
-                                    <Image src="assets/imgs/header/1.jpg" alt="" />
+                                    <img src="/assets/imgs/header/1.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -44,7 +43,7 @@ export default function Home() {
                             </svg>
                         </div>
                     </div>
-                    <Image src="assets/imgs/header/2.jpg" alt="" />
+                    <img src="/assets/imgs/header/2.jpg" alt="" />
                     <div className="text">
                         <span className="fz-12 text-u mb-10">Since <br /> 2018</span>
                         <p>We convert <br />
@@ -82,11 +81,11 @@ export default function Home() {
                         <div className="col-lg-8">
                             <h3 className="text-indent">Our team of experts focus on client and customer satisfaction as the ultimate goal for our projects. This is one of the many reasons why our work is globally acclaimed and recognized.
                             </h3>
-                            <Link href="../inner_pages/about.html" className="crv-butn mt-40">
+                            <Link href="/about" className="crv-butn mt-40">
                                 <div className="d-flex">
                                     <span className="text">More About Us</span>
                                     <span className="icon">
-                                        <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                        <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                     </span>
                                 </div>
                             </Link>
@@ -101,36 +100,36 @@ export default function Home() {
                 <div className="slide-har st1">
                     <div className="box">
                         <div className="item">
-                            <Image src="assets/imgs/brands/1.svg" alt="" />
+                            <img src="/assets/imgs/brands/1.svg" alt="" />
                         </div>
                         <div className="item">
-                            <Image src="assets/imgs/brands/2.svg" alt="" />
+                            <img src="/assets/imgs/brands/2.svg" alt="" />
                         </div>
                         <div className="item">
-                            <Image src="assets/imgs/brands/3.svg" alt="" />
+                            <img src="/assets/imgs/brands/3.svg" alt="" />
                         </div>
                         <div className="item">
-                            <Image src="assets/imgs/brands/4.svg" alt="" />
+                            <img src="/assets/imgs/brands/4.svg" alt="" />
                         </div>
                         <div className="item">
-                            <Image src="assets/imgs/brands/5.svg" alt="" />
+                            <img src="/assets/imgs/brands/5.svg" alt="" />
                         </div>
                     </div>
                     <div className="box">
                         <div className="item">
-                            <Image src="assets/imgs/brands/1.svg" alt="" />
+                            <img src="/assets/imgs/brands/1.svg" alt="" />
                         </div>
                         <div className="item">
-                            <Image src="assets/imgs/brands/2.svg" alt="" />
+                            <img src="/assets/imgs/brands/2.svg" alt="" />
                         </div>
                         <div className="item">
-                            <Image src="assets/imgs/brands/3.svg" alt="" />
+                            <img src="/assets/imgs/brands/3.svg" alt="" />
                         </div>
                         <div className="item">
-                            <Image src="assets/imgs/brands/4.svg" alt="" />
+                            <img src="/assets/imgs/brands/4.svg" alt="" />
                         </div>
                         <div className="item">
-                            <Image src="assets/imgs/brands/5.svg" alt="" />
+                            <img src="/assets/imgs/brands/5.svg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -140,28 +139,6 @@ export default function Home() {
         <section className="works-dm section-padding">
             <div className="container">
                 <div className="gallery row md-marg">
-                    <div className="items col-lg-6 order-md-2">
-                        <div className="item">
-                            <div className="img">
-                                <Image src="assets/imgs/works/2.jpg" alt="" />
-                                <div className="tags">
-                                    <Link href="#0">Website</Link>
-                                    <Link href="#0">UI/UX</Link>
-                                    <Link href="#0">illustration</Link>
-                                </div>
-                            </div>
-                            <div className="cont mt-30">
-                                <div className="info sub-color mb-10">
-                                    <span>2024</span>
-                                    <span className="dot"></span>
-                                    <span>WordPress</span>
-                                </div>
-                                <h6>
-                                    <Link href="../inner_pages/project-details.html">Smart Choice Builders</Link>
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
                     <div className="items col-lg-6 order-md-1">
                         <div className="sec-head">
                             <h6 className="sub-head mb-15">Featured Works</h6>
@@ -171,29 +148,7 @@ export default function Home() {
                     <div className="items col-lg-6 order-md-2">
                         <div className="item">
                             <div className="img">
-                                <Image src="assets/imgs/works/1.jpg" alt="" />
-                                <div className="tags">
-                                    <Link href="#0">Website</Link>
-                                    <Link href="#0">UI/UX</Link>
-                                    <Link href="#0">illustration</Link>
-                                </div>
-                            </div>
-                            <div className="cont mt-30">
-                                <div className="info sub-color mb-10">
-                                    <span>2023</span>
-                                    <span className="dot"></span>
-                                    <span>WordPress</span>
-                                </div>
-                                <h6>
-                                    <Link href="../inner_pages/project-details.html">Metro Contracting Ltd.</Link>
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="items col-lg-6 order-md-2">
-                        <div className="item">
-                            <div className="img">
-                                <Image src="assets/imgs/works/3.jpg" alt="" />
+                                <img src="/assets/imgs/works/1.jpg" alt="" />
                                 <div className="tags">
                                 <Link href="#0">Website</Link>
                                     <Link href="#0">UI/UX</Link>
@@ -207,7 +162,7 @@ export default function Home() {
                                     <span>WordPress</span>
                                 </div>
                                 <h6>
-                                    <Link href="../inner_pages/project-details.html">313 Consultancy</Link>
+                                    <Link target="_blank" href="https://pacific-stairs.sayanisbiz.com/">Pacific Stairs & Railings</Link>
                                 </h6>
                             </div>
                         </div>
@@ -215,7 +170,29 @@ export default function Home() {
                     <div className="items col-lg-6 order-md-2">
                         <div className="item">
                             <div className="img">
-                                <Image src="assets/imgs/works/4.jpg" alt="" />
+                                <img src="/assets/imgs/works/3.jpg" alt="" />
+                                <div className="tags">
+                                <Link href="#0">Website</Link>
+                                    <Link href="#0">UI/UX</Link>
+                                    <Link href="#0">illustration</Link>
+                                </div>
+                            </div>
+                            <div className="cont mt-30">
+                                <div className="info sub-color mb-10">
+                                    <span>2023</span>
+                                    <span className="dot"></span>
+                                    <span>WordPress</span>
+                                </div>
+                                <h6>
+                                    <Link target="_blank" href="https://313consultancy.org/">313 Consultancy</Link>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="items col-lg-6 order-md-2">
+                        <div className="item">
+                            <div className="img">
+                                <img src="/assets/imgs/works/4.jpg" alt="" />
                                 <div className="tags">
                                     <Link href="#0">Website</Link>
                                     <Link href="#0">UI/UX</Link>
@@ -229,17 +206,39 @@ export default function Home() {
                                     <span>WordPress</span>
                                 </div>
                                 <h6>
-                                    <Link href="../inner_pages/project-details.html">South Ridge Disposal Ltd</Link>
+                                    <Link target="_blank" href="https://southridgedisposal.com/">South Ridge Disposal Ltd</Link>
                                 </h6>
                             </div>
                         </div>
                     </div>
                     <div className="items col-lg-6 order-md-2">
-                        <Link href="../inner_pages/portfolio-gallery.html" className="crv-butn mt-100">
+                        <div className="item">
+                            <div className="img">
+                                <img src="/assets/imgs/works/2.jpg" alt="" />
+                                <div className="tags">
+                                    <Link href="#0">Website</Link>
+                                    <Link href="#0">UI/UX</Link>
+                                    <Link href="#0">illustration</Link>
+                                </div>
+                            </div>
+                            <div className="cont mt-30">
+                                <div className="info sub-color mb-10">
+                                    <span>2024</span>
+                                    <span className="dot"></span>
+                                    <span>WordPress</span>
+                                </div>
+                                <h6>
+                                    <Link target="_blank" href="https://smartchoicebuilders.ca/">Smart Choice Builders</Link>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="items col-lg-6 order-md-2">
+                        <Link href="/portfolio" className="crv-butn mt-100">
                             <div className="d-flex">
                                 <span className="text">View all Projects</span>
                                 <span className="icon">
-                                    <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                    <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                 </span>
                             </div>
                         </Link>
@@ -260,13 +259,13 @@ export default function Home() {
                         </div>
                         <div className="col-lg-3">
                             <div className="text">
-                                <p>We are a brand marketing agency with expertise, and we’re on a mission
+                                <p>We are a brand marketing agency with expertise, and we are on a mission
                                     to help you take the next step in your business.</p>
-                                <Link href="../inner_pages/services.html" className="crv-butn mt-40">
+                                <Link href="/services" className="crv-butn mt-40">
                                     <div className="d-flex">
                                         <span className="text">Learn More</span>
                                         <span className="icon">
-                                            <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                            <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                                         </span>
                                     </div>
                                 </Link>
@@ -276,61 +275,61 @@ export default function Home() {
                 </div>
                 <div className="row justify-content-end">
                     <div className="col-lg-9">
-                        <div className="item d-flex align-items-center">
+                        <div className="item d-flex align-items-center justify-between gap-5">
                             <div className="title">
                                 <h2>Branding</h2>
                             </div>
                             <div className="text ml-auto">
                                 <div className="d-flex align-items-center">
-                                    <p>Brand Identity, Stragegy & Consult, <br /> Position, Rebrand</p>
+                                    <p>Branding identity, Logo Design, Brand Strategy & Visual Language</p>
                                     <div>
                                         <div className="icon invert">
-                                            <Image src="../common/imgs/icons/crown-solid.svg" alt="" />
+                                            <img src="../common/imgs/icons/crown-solid.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="item d-flex align-items-center">
+                        <div className="item d-flex align-items-center justify-between gap-5">
                             <div className="title">
                                 <h2>Design</h2>
                             </div>
                             <div className="text ml-auto">
                                 <div className="d-flex align-items-center">
-                                    <p>Brand Identity, Stragegy & Consult, <br /> Position, Rebrand</p>
+                                    <p>UI/UX Design, Web & App Design, Brand Identity, Visual Direction</p>
                                     <div>
                                         <div className="icon invert">
-                                            <Image src="../common/imgs/icons/bezier-curve-solid.svg" alt="" />
+                                            <img src="../common/imgs/icons/bezier-curve-solid.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="item d-flex align-items-center">
+                        <div className="item d-flex align-items-center justify-between gap-5">
                             <div className="title">
                                 <h2>Code</h2>
                             </div>
                             <div className="text ml-auto">
                                 <div className="d-flex align-items-center">
-                                    <p>Brand Identity, Stragegy & Consult, <br /> Position, Rebrand</p>
+                                    <p>Website Development, Web Applications, Mobile Apps, CMS & E-commerce</p>
                                     <div>
                                         <div className="icon invert">
-                                            <Image src="../common/imgs/icons/code-solid.svg" alt="" />
+                                            <img src="../common/imgs/icons/code-solid.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="item d-flex align-items-center">
+                        <div className="item d-flex align-items-center justify-between gap-5">
                             <div className="title">
                                 <h2>Growth</h2>
                             </div>
                             <div className="text ml-auto">
                                 <div className="d-flex align-items-center">
-                                    <p>Brand Identity, Stragegy & Consult, <br /> Position, Rebrand</p>
+                                    <p>SEO Optimization, Social Media Marketing, Performance Campaigns, Analytics & Strategy</p>
                                     <div>
                                         <div className="icon invert">
-                                            <Image src="../common/imgs/icons/chart-line-solid.svg" alt="" />
+                                            <img src="../common/imgs/icons/chart-line-solid.svg" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -343,14 +342,14 @@ export default function Home() {
 
         <section className="intro-vid ontop">
             <div className="container">
-                <div className="bg-img" data-background="assets/imgs/intro.jpg">
+                <div className="bg-img" data-background="/assets/imgs/intro.jpg">
                     <div className="states">
                         <div className="imgs mb-30">
                             <div className="img fit-img">
-                                <Image src="assets/imgs/testim/avatar1.jpg" alt="" />
+                                <img src="/assets/imgs/testim/avatar1.jpg" alt="" />
                             </div>
                             <Link href="#0" className="icon">
-                                <Image src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
                             </Link>
                         </div>
                         <h3 className="mb-15">7k+ Clients</h3>
@@ -393,14 +392,14 @@ export default function Home() {
                                 <div className="d-flex mb-30">
                                     <div className="img">
                                         <div className="fit-img">
-                                            <Image src="assets/imgs/testim/avatar1.jpg" alt="" />
+                                            <img src="/assets/imgs/testim/avatar1.jpg" alt="" />
                                         </div>
                                     </div>
                                     <div className="ml-auto">
                                         <span className="sub-color">Design quality</span>
                                     </div>
                                 </div>
-                                <h5>“Their services aren’t cookie-cutter and are truly specific to us.”</h5>
+                                <h5>“Their services are not cookie-cutter and are truly specific to us.”</h5>
                                 <div className="d-flex mt-30">
                                     <span className="sub-color">Aaron Beck</span>
                                     <div className="stars ml-auto">
@@ -418,14 +417,14 @@ export default function Home() {
                                 <div className="d-flex mb-30">
                                     <div className="img">
                                         <div className="fit-img">
-                                            <Image src="assets/imgs/testim/avatar2.jpg" alt="" />
+                                            <img src="/assets/imgs/testim/avatar2.jpg" alt="" />
                                         </div>
                                     </div>
                                     <div className="ml-auto">
                                         <span className="sub-color">Design quality</span>
                                     </div>
                                 </div>
-                                <h5>“Their services aren’t cookie-cutter and are truly specific to us.”</h5>
+                                <h5>“Their services are not cookie-cutter and are truly specific to us.”</h5>
                                 <div className="d-flex mt-30">
                                     <span className="sub-color">Aaron Beck</span>
                                     <div className="stars ml-auto">
@@ -443,14 +442,14 @@ export default function Home() {
                                 <div className="d-flex mb-30">
                                     <div className="img">
                                         <div className="fit-img">
-                                            <Image src="assets/imgs/testim/avatar3.jpg" alt="" />
+                                            <img src="/assets/imgs/testim/avatar3.jpg" alt="" />
                                         </div>
                                     </div>
                                     <div className="ml-auto">
                                         <span className="sub-color">Design quality</span>
                                     </div>
                                 </div>
-                                <h5>“Their services aren’t cookie-cutter and are truly specific to us.”</h5>
+                                <h5>“Their services are not cookie-cutter and are truly specific to us.”</h5>
                                 <div className="d-flex mt-30">
                                     <span className="sub-color">Aaron Beck</span>
                                     <div className="stars ml-auto">
@@ -468,14 +467,14 @@ export default function Home() {
                                 <div className="d-flex mb-30">
                                     <div className="img">
                                         <div className="fit-img">
-                                            <Image src="assets/imgs/testim/avatar4.jpg" alt="" />
+                                            <img src="/assets/imgs/testim/avatar4.jpg" alt="" />
                                         </div>
                                     </div>
                                     <div className="ml-auto">
                                         <span className="sub-color">Design quality</span>
                                     </div>
                                 </div>
-                                <h5>“Their services aren’t cookie-cutter and are truly specific to us.”</h5>
+                                <h5>“Their services are not cookie-cutter and are truly specific to us.”</h5>
                                 <div className="d-flex mt-30">
                                     <span className="sub-color">Aaron Beck</span>
                                     <div className="stars ml-auto">
@@ -493,14 +492,14 @@ export default function Home() {
                                 <div className="d-flex mb-30">
                                     <div className="img">
                                         <div className="fit-img">
-                                            <Image src="assets/imgs/testim/avatar3.jpg" alt="" />
+                                            <img src="/assets/imgs/testim/avatar3.jpg" alt="" />
                                         </div>
                                     </div>
                                     <div className="ml-auto">
                                         <span className="sub-color">Design quality</span>
                                     </div>
                                 </div>
-                                <h5>“Their services aren’t cookie-cutter and are truly specific to us.”</h5>
+                                <h5>“Their services are not cookie-cutter and are truly specific to us.”</h5>
                                 <div className="d-flex mt-30">
                                     <span className="sub-color">Aaron Beck</span>
                                     <div className="stars ml-auto">
@@ -537,11 +536,11 @@ export default function Home() {
                     <div className="col-lg-6">
                         <div className="item md-mb50">
                             <div className="img fit-img">
-                                <Image src="assets/imgs/blog/1.jpg" alt="" />
+                                <img src="/assets/imgs/blog/1.jpg" alt="" />
                             </div>
                             <div className="cont mt-30">
                                 <h6>
-                                    <Link href="../inner_pages/blog-details.html">How to Create a Brand Identity for Your Business <br /> using AI?</Link>
+                                    <Link href="/">How to Create a Brand Identity for Your Business <br /> using AI?</Link>
                                 </h6>
                                 <div className="info d-flex align-items-center mt-20">
                                     <Link href="#0" className="tag">
@@ -557,11 +556,11 @@ export default function Home() {
                     <div className="col-lg-6">
                         <div className="item">
                             <div className="img fit-img">
-                                <Image src="assets/imgs/blog/2.jpg" alt="" />
+                                <img src="/assets/imgs/blog/2.jpg" alt="" />
                             </div>
                             <div className="cont mt-30">
                                 <h6>
-                                    <Link href="../inner_pages/blog-details.html">Common UX painpoints in Dashboard-related <br /> projects</Link>
+                                    <Link href="/">Common UX painpoints in Dashboard-related <br /> projects</Link>
                                 </h6>
                                 <div className="info d-flex align-items-center mt-20">
                                     <Link href="#0" className="tag">

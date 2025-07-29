@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Menu() {
@@ -37,7 +36,7 @@ export default function Menu() {
                         <li>
                             <div className="o-hidden">
                                 <Link href="/contact" className="link"><span className="fill-text"
-                                        data-text="Start Project">Start Project</span></Link>
+                                        data-text="Start Project Now!">Start Project Now!</span></Link>
                             </div>
                         </li>
                     </ul>
@@ -45,7 +44,7 @@ export default function Menu() {
                 <div className="cont-info valign">
                     <div className="text-center full-width">
                         <div className="logo">
-                            <Image src="assets/imgs/Logo-light.svg" alt="" />
+                            <img src="/assets/imgs/Logo-light.svg" alt="" />
                         </div>
                         <div className="social-icon mt-40">
                             <Link href="#"> <i className="fab fa-facebook-f"></i> </Link>
