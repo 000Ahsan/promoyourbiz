@@ -13,7 +13,7 @@ export default function Home() {
                 <div className="row">
                     <div className="col-lg-9">
                         <div className="caption">
-                            <h1> Unleash the Power of <br /> Your Brand's Story</h1>
+                            <h1> Unleash the Power of <br /> Your Brand&apos;s Story</h1>
                             <button 
                                 onClick={() => setIsModalOpen(true)} 
                                 className="crv-butn mt-40"
@@ -101,7 +101,7 @@ export default function Home() {
                             <h6 className="sub-head">Why Your Brand Matters</h6>
                         </div>
                         <div className="col-lg-8">
-                            <h3 className="text-indent">Every brand has a spark that sets it apart. We believe your origin story, values, and vision are the most powerful assets you own. By centering your website around your why, you'll connect with customers on a deeper level—fostering loyalty and advocacy rather than fleeting clicks.
+                            <h3 className="text-indent">Every brand has a spark that sets it apart. We believe your origin story, values, and vision are the most powerful assets you own. By centering your website around your why, you will connect with customers on a deeper level—fostering loyalty and advocacy rather than fleeting clicks.
                             </h3>
                             <Link href="/about" className="crv-butn mt-40">
                                 <div className="d-flex">
@@ -398,7 +398,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                <h5>"Working with this team transformed our online presence. Their process unveiled our true voice, and our site now speaks directly to our ideal clients"</h5>
+                                <h5>Working with this team transformed our online presence. Their process unveiled our true voice, and our site now speaks directly to our ideal clients</h5>
                                 <div className="d-flex mt-30">
                                     <span className="sub-color">Jordan Lee, Founder of EcoBlend</span>
                                     <div className="stars ml-auto">
@@ -420,7 +420,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                <h5>"The storytelling framework connected us with customers who share our vision. We've never felt more aligned with our digital identity"</h5>
+                                <h5>The storytelling framework connected us with customers who share our vision. We have never felt more aligned with our digital identity</h5>
                                 <div className="d-flex mt-30">
                                     <span className="sub-color">Aron Whites, CEO of Meridian Homes</span>
                                     <div className="stars ml-auto">

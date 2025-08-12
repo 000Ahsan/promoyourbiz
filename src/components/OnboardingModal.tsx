@@ -52,11 +52,11 @@ const OnboardingModal = ({ isOpen, onClose }: OnboardingModalProps) => {
     };
   }, [isOpen]);
 
-  const updateData = (field: keyof OnboardingData | 'contactInfo', value: any) => {
+  const updateData = (field: keyof OnboardingData | 'contactInfo', value: string | { name: string; email: string; phone: string }) => {
     if (field === 'contactInfo') {
       setData(prev => ({
         ...prev,
-        contactInfo: { ...prev.contactInfo, ...value }
+        contactInfo: { ...prev.contactInfo, ...(value as { name: string; email: string; phone: string }) }
       }));
     } else {
       setData(prev => ({ ...prev, [field]: value }));
@@ -288,7 +288,7 @@ const OnboardingModal = ({ isOpen, onClose }: OnboardingModalProps) => {
             <div className="step-content">
               <div className="step-header">
                 <h2>Contact Information</h2>
-                <p>Let's get in touch to discuss your project</p>
+                <p>Lets get in touch to discuss your project</p>
               </div>
               <div className="form-row">
                 <div className="form-group">
@@ -296,7 +296,7 @@ const OnboardingModal = ({ isOpen, onClose }: OnboardingModalProps) => {
                   <input
                     type="text"
                     value={data.contactInfo.name}
-                    onChange={(e) => updateData('contactInfo', { name: e.target.value })}
+                    onChange={(e) => updateData('contactInfo', { name: e.target.value, email: data.contactInfo.email, phone: data.contactInfo.phone })}
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -305,7 +305,7 @@ const OnboardingModal = ({ isOpen, onClose }: OnboardingModalProps) => {
                   <input
                     type="email"
                     value={data.contactInfo.email}
-                    onChange={(e) => updateData('contactInfo', { email: e.target.value })}
+                    onChange={(e) => updateData('contactInfo', { email: e.target.value, name: data.contactInfo.name, phone: data.contactInfo.phone })}
                     placeholder="Enter your email"
                   />
                 </div>
@@ -315,7 +315,7 @@ const OnboardingModal = ({ isOpen, onClose }: OnboardingModalProps) => {
                 <input
                   type="tel"
                   value={data.contactInfo.phone}
-                  onChange={(e) => updateData('contactInfo', { phone: e.target.value })}
+                  onChange={(e) => updateData('contactInfo', { phone: e.target.value, name: data.contactInfo.name, email: data.contactInfo.email })}
                   placeholder="Enter your phone number"
                 />
               </div>
@@ -340,7 +340,7 @@ const OnboardingModal = ({ isOpen, onClose }: OnboardingModalProps) => {
             <div className="step-content">
               <div className="step-header">
                 <h2>Schedule a Call</h2>
-                <p>Let's discuss your project in detail</p>
+                <p>Lets discuss your project in detail</p>
               </div>
               <div className="summary-card">
                 <h3>Project Summary</h3>
@@ -373,7 +373,7 @@ const OnboardingModal = ({ isOpen, onClose }: OnboardingModalProps) => {
                 <div className="contact-option">
                   <div className="option-icon">📧</div>
                   <h4>Send Email</h4>
-                  <p>We'll review your information and get back to you within 24 hours</p>
+                  <p>We will review your information and get back to you within 24 hours</p>
                   <button className="email-btn" onClick={handleSubmit}>
                     Submit Information
                   </button>
