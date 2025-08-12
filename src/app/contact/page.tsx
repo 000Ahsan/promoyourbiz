@@ -12,7 +12,7 @@ export default function Contact() {
                 <div className="container-fluid">
                     <div className="google-map">
                         <iframe id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=hollwood&t=&z=11&ie=UTF8&iwloc=&output=embed">
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43055841.53308544!2d-135.74033965409492!3d48.802505163337386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2s!4v1755006567148!5m2!1sen!2s">
                         </iframe>
                     </div>
                 </div>
@@ -28,13 +28,12 @@ export default function Contact() {
                                         Lets make your <br /> brand <span className="fw-200">
                                             brilliant!</span>
                                     </h2>
-                                    <p className="mt-20 mb-20">If you would like to work with us or just want to get in
-                                        touch, we would love to hear from you!</p>
+                                    <p className="mt-20 mb-20">Whether you’re ready to start or simply curious, we’d love to hear about your project.</p>
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="morinfo mt-30">
-                                                <h6 className="mb-15">Address</h6>
-                                                <p>Surrey, BC, Canada</p>
+                                                <h6 className="mb-15">Location</h6>
+                                                <p>Canada</p>
                                             </div>
                                         </div>
                                         <div className="col-md-6">

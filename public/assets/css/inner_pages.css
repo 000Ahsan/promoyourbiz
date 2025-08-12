@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* ========= [ * inner pages ]  =========*/
 :root {
-  --bg-color: #232323;
-  --theme-color: #20255D;
+  --bg-color: #20255D;
+  --theme-color: #232323;
   --main-color: #F5D60D; }
 
 /* --------------- Menu --------------- */
@@ -1810,24 +1810,19 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 h1 {
-  font-size: 64px;
-  letter-spacing: -3px; }
+  font-size: 64px; }
 
 h2 {
-  font-size: 48px;
-  letter-spacing: -3px; }
+  font-size: 48px; }
 
 h3 {
-  font-size: 40px;
-  letter-spacing: -2px; }
+  font-size: 40px;}
 
 h4 {
-  font-size: 36px;
-  letter-spacing: -2px; }
+  font-size: 36px;}
 
 h5 {
-  font-size: 28px;
-  letter-spacing: -1px; }
+  font-size: 28px; }
 
 h6 {
   font-size: 22px; }
@@ -1854,7 +1849,7 @@ h6 {
   color: #a4a4a4; }
 
 .sub-head {
-  font-size: 20px; }
+  font-size: 25px; }
 
 .title-font {
   font-family: "Six Caps", sans-serif;
@@ -1869,7 +1864,7 @@ p {
 .sec-head .sub-head {
   position: relative;
   padding-left: 25px;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 300; }
   .sec-head .sub-head:after {
     content: '';

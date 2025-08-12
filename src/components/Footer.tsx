@@ -14,8 +14,20 @@ export default function Footer() {
                         </Link>
                     </div>
                     <div className="col-lg-6">
-                        <h3 className="text-indent">Empowering brands and simplifying digital experiences through strategic design, clean code, and smart marketing.
+                        <h3 className="text-indent">Ready to bring your brand story to life?
                         </h3>
+
+                        <button 
+                            className="crv-butn mt-40"
+                            style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+                        >
+                            <div className="d-flex">
+                                <span className="text">Schedule a Discovery Call</span>
+                                <span className="icon">
+                                    <img src="/common/imgs/icons/arrow-top-right.svg" alt="" />
+                                </span>
+                            </div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -26,7 +38,7 @@ export default function Footer() {
                             <div className="col-md-6">
                                 <div className="item">
                                     <span className="sub-color">location</span>
-                                    <p>Surrey, BC, Canada</p>
+                                    <p>Canada</p>
                                 </div>
                             </div>
                             <div className="col-md-6 d-flex justify-content-end justify-end">

@@ -1,6 +1,11 @@
+'use client';
+
 import Link from "next/link";
+import { useState } from "react";
+import OnboardingModal from "@/components/OnboardingModal";
 
 export default function Home() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <main>
         <header className="header-dm section-padding">
@@ -8,7 +13,19 @@ export default function Home() {
                 <div className="row">
                     <div className="col-lg-9">
                         <div className="caption">
-                            <h1>Creative & Effective Brand <br /> Marketing Agency</h1>
+                            <h1> Unleash the Power of <br /> Your Brand's Story</h1>
+                            <button 
+                                onClick={() => setIsModalOpen(true)} 
+                                className="crv-butn mt-40"
+                                style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+                            >
+                                <div className="d-flex">
+                                    <span className="text">Claim Your Brand Blueprint</span>
+                                    <span className="icon">
+                                        <img src="/common/imgs/icons/arrow-top-right.svg" alt="" />
+                                    </span>
+                                </div>
+                            </button>
                         </div>
                         <div className="row md-hide">
                             <div className="col-lg-6 imgs-cube">
@@ -18,7 +35,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="img fit-img radius-30 mt-50">
-                                    <img src="/assets/imgs/header/1.jpg" alt="" />
+                                    <video src="/assets/imgs/header/video-1.mp4" autoPlay muted loop />
                                 </div>
                             </div>
                         </div>
@@ -31,7 +48,7 @@ export default function Home() {
                                 className="w-11 h-11">
                                 <path
                                     d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                                    fill="#0e0f11"></path>
+                                    fill="#232323"></path>
                             </svg>
                         </div>
                         <div className="shap-left-bottom">
@@ -39,22 +56,27 @@ export default function Home() {
                                 className="w-11 h-11">
                                 <path
                                     d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                                    fill="#0e0f11"></path>
+                                    fill="#232323"></path>
                             </svg>
                         </div>
                     </div>
-                    <img src="/assets/imgs/header/2.jpg" alt="" />
+                    <video style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        objectPosition: 'center',
+                        borderRadius: '30px'
+                    }} src="/assets/imgs/header/video-222.mp4" autoPlay muted loop />
                     <div className="text">
-                        <span className="fz-12 text-u mb-10">Since <br /> 2018</span>
-                        <p>We convert <br />
-                            Ideas into Brands!</p>
+                        <span className="fz-12 text-u mb-10">Since 2018</span>
+                        <p>We craft websites that reveal your why <br /> and resonate with your audience, <br />turning casual visitors into devoted customers.</p>
                         <div className="shaps bottom">
                             <div className="shap-left-top">
                                 <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
                                     className="w-11 h-11">
                                     <path
                                         d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                                        fill="#0e0f11"></path>
+                                        fill="#232323"></path>
                                 </svg>
                             </div>
                             <div className="shap-right-bottom">
@@ -62,7 +84,7 @@ export default function Home() {
                                     className="w-11 h-11">
                                     <path
                                         d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                                        fill="#0e0f11"></path>
+                                        fill="#232323"></path>
                                 </svg>
                             </div>
                         </div>
@@ -76,10 +98,10 @@ export default function Home() {
                 <div className="sec-head mb-100">
                     <div className="row">
                         <div className="col-lg-4">
-                            <h6 className="sub-head">What Makes Us Different</h6>
+                            <h6 className="sub-head">Why Your Brand Matters</h6>
                         </div>
                         <div className="col-lg-8">
-                            <h3 className="text-indent">Our team of experts focus on client and customer satisfaction as the ultimate goal for our projects. This is one of the many reasons why our work is globally acclaimed and recognized.
+                            <h3 className="text-indent">Every brand has a spark that sets it apart. We believe your origin story, values, and vision are the most powerful assets you own. By centering your website around your why, you'll connect with customers on a deeper level—fostering loyalty and advocacy rather than fleeting clicks.
                             </h3>
                             <Link href="/about" className="crv-butn mt-40">
                                 <div className="d-flex">
@@ -282,11 +304,6 @@ export default function Home() {
                             <div className="text ml-auto">
                                 <div className="d-flex align-items-center">
                                     <p>Branding identity, Logo Design, Brand Strategy & Visual Language</p>
-                                    <div>
-                                        <div className="icon invert">
-                                            <img src="../common/imgs/icons/crown-solid.svg" alt="" />
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -297,11 +314,6 @@ export default function Home() {
                             <div className="text ml-auto">
                                 <div className="d-flex align-items-center">
                                     <p>UI/UX Design, Web & App Design, Brand Identity, Visual Direction</p>
-                                    <div>
-                                        <div className="icon invert">
-                                            <img src="../common/imgs/icons/bezier-curve-solid.svg" alt="" />
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -312,11 +324,6 @@ export default function Home() {
                             <div className="text ml-auto">
                                 <div className="d-flex align-items-center">
                                     <p>Website Development, Web Applications, Mobile Apps, CMS & E-commerce</p>
-                                    <div>
-                                        <div className="icon invert">
-                                            <img src="../common/imgs/icons/code-solid.svg" alt="" />
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -327,11 +334,6 @@ export default function Home() {
                             <div className="text ml-auto">
                                 <div className="d-flex align-items-center">
                                     <p>SEO Optimization, Social Media Marketing, Performance Campaigns, Analytics & Strategy</p>
-                                    <div>
-                                        <div className="icon invert">
-                                            <img src="../common/imgs/icons/chart-line-solid.svg" alt="" />
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -392,16 +394,13 @@ export default function Home() {
                                 <div className="d-flex mb-30">
                                     <div className="img">
                                         <div className="fit-img">
-                                            <img src="/assets/imgs/testim/avatar1.jpg" alt="" />
+                                            <img src="/assets/imgs/testim/avatar4.jpg" alt="" />
                                         </div>
                                     </div>
-                                    <div className="ml-auto">
-                                        <span className="sub-color">Design quality</span>
-                                    </div>
                                 </div>
-                                <h5>“Their services are not cookie-cutter and are truly specific to us.”</h5>
+                                <h5>"Working with this team transformed our online presence. Their process unveiled our true voice, and our site now speaks directly to our ideal clients"</h5>
                                 <div className="d-flex mt-30">
-                                    <span className="sub-color">Aaron Beck</span>
+                                    <span className="sub-color">Jordan Lee, Founder of EcoBlend</span>
                                     <div className="stars ml-auto">
                                         <i className="fas fa-star"></i>
                                         <i className="fas fa-star"></i>
@@ -420,88 +419,10 @@ export default function Home() {
                                             <img src="/assets/imgs/testim/avatar2.jpg" alt="" />
                                         </div>
                                     </div>
-                                    <div className="ml-auto">
-                                        <span className="sub-color">Design quality</span>
-                                    </div>
                                 </div>
-                                <h5>“Their services are not cookie-cutter and are truly specific to us.”</h5>
+                                <h5>"The storytelling framework connected us with customers who share our vision. We've never felt more aligned with our digital identity"</h5>
                                 <div className="d-flex mt-30">
-                                    <span className="sub-color">Aaron Beck</span>
-                                    <div className="stars ml-auto">
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="item">
-                                <div className="d-flex mb-30">
-                                    <div className="img">
-                                        <div className="fit-img">
-                                            <img src="/assets/imgs/testim/avatar3.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <span className="sub-color">Design quality</span>
-                                    </div>
-                                </div>
-                                <h5>“Their services are not cookie-cutter and are truly specific to us.”</h5>
-                                <div className="d-flex mt-30">
-                                    <span className="sub-color">Aaron Beck</span>
-                                    <div className="stars ml-auto">
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="item">
-                                <div className="d-flex mb-30">
-                                    <div className="img">
-                                        <div className="fit-img">
-                                            <img src="/assets/imgs/testim/avatar4.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <span className="sub-color">Design quality</span>
-                                    </div>
-                                </div>
-                                <h5>“Their services are not cookie-cutter and are truly specific to us.”</h5>
-                                <div className="d-flex mt-30">
-                                    <span className="sub-color">Aaron Beck</span>
-                                    <div className="stars ml-auto">
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="item">
-                                <div className="d-flex mb-30">
-                                    <div className="img">
-                                        <div className="fit-img">
-                                            <img src="/assets/imgs/testim/avatar3.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <span className="sub-color">Design quality</span>
-                                    </div>
-                                </div>
-                                <h5>“Their services are not cookie-cutter and are truly specific to us.”</h5>
-                                <div className="d-flex mt-30">
-                                    <span className="sub-color">Aaron Beck</span>
+                                    <span className="sub-color">Aron Whites, CEO of Meridian Homes</span>
                                     <div className="stars ml-auto">
                                         <i className="fas fa-star"></i>
                                         <i className="fas fa-star"></i>
@@ -535,10 +456,10 @@ export default function Home() {
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="item md-mb50">
-                            <div className="img fit-img">
+                            <div className="img">
                                 <img src="/assets/imgs/blog/1.jpg" alt="" />
                             </div>
-                            <div className="cont mt-30">
+                            <div className="cont">
                                 <h6>
                                     <Link href="/">How to Create a Brand Identity for Your Business <br /> using AI?</Link>
                                 </h6>
@@ -555,7 +476,7 @@ export default function Home() {
                     </div>
                     <div className="col-lg-6">
                         <div className="item">
-                            <div className="img fit-img">
+                            <div className="img">
                                 <img src="/assets/imgs/blog/2.jpg" alt="" />
                             </div>
                             <div className="cont mt-30">
@@ -576,6 +497,11 @@ export default function Home() {
                 </div>
             </div>
         </section>
+
+        <OnboardingModal 
+            isOpen={isModalOpen} 
+            onClose={() => setIsModalOpen(false)} 
+        />
     </main>
   );
 }

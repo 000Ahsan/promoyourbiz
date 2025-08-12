@@ -7,8 +7,8 @@ import Menu from "@/components/Menu";
 
 
 export const metadata: Metadata = {
-  title: "An Interactive Brand Marketing Agency in Vancouver, Canada | Promo Your Biz",
-  description: "An Interactive Brand Marketing Agency in Vancouver, Canada",
+  title: "An Interactive Brand Marketing Agency in Canada | Promo Your Biz",
+  description: "An Interactive Brand Marketing Agency in Canada",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" href="/assets/imgs/favicon.ico" />
+        <link rel="shortcut icon" href="/assets/imgs/favicon.png" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="/common/css/plugins.css" />
         <link rel="stylesheet" href="/common/css/common_style.css" />

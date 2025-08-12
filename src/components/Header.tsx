@@ -33,7 +33,7 @@ export default function Header() {
             <div className="topnav d-flex align-items-center">
                 <Link href="/contact" className="butn butn-rounded">
                     <div className="d-flex align-items-center">
-                        <span>Start Project</span>
+                        <span>Get in Touch</span>
                         <span className="icon ml-10">
                             <img src="/common/imgs/icons/arrow-top-right.svg" alt="" />
                         </span>

@@ -3,16 +3,74 @@ import Link from "next/link";
 export default function About() {
     return (
         <main>
-            <header className="work-hed">
-                <div className="container section-padding">
-                    <div className="caption text-center">
-                        <h1>What We Delivered!</h1>
-                        <div className="path mt-15">
-                            <span>
-                                <Link href="#">Home</Link>
-                            </span>
-                            <span><i className="fa-solid fa-arrow-right-long"></i></span>
-                            <span className="main-color">Portfolio</span>
+            <header className="serv-hed section-padding pb-0">
+                <div className="container">
+                    <div className="caption mb-80">
+                        <h1 className="sec-head"><span className="sub-head mr-30">Our Portfolio</span> Transformations That Speak Volumes</h1>
+                        <div className="row justify-content-end">
+                            <div className="col-lg-5">
+                                <div className="text mt-30">
+                                Explore case studies showcasing how we turned brand stories into high-performing websites.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="container-fluid">
+                    <div className="main-marq shadow-off">
+                        <div className="slide-har st1">
+                            <div className="box">
+                                <div className="item">
+                                    <h2><span>Portfolio</span>
+                                    </h2>
+                                </div>
+                                <div className="item">
+                                    <h2><span>Portfolio</span>
+                                    </h2>
+                                </div>
+                                <div className="item">
+                                    <h2><span>Portfolio</span>
+                                    </h2>
+                                </div>
+                                <div className="item">
+                                    <h2><span>Portfolio</span>
+                                    </h2>
+                                </div>
+                                <div className="item">
+                                    <h2><span>Portfolio</span>
+                                    </h2>
+                                </div>
+                                <div className="item">
+                                    <h2><span>Portfolio</span>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div className="box">
+                                <div className="item">
+                                    <h2><span>Portfolio</span>
+                                    </h2>
+                                </div>
+                                <div className="item">
+                                    <h2><span>Portfolio</span>
+                                    </h2>
+                                </div>
+                                <div className="item">
+                                    <h2><span>Portfolio</span>
+                                    </h2>
+                                </div>
+                                <div className="item">
+                                    <h2><span>Portfolio</span>
+                                    </h2>
+                                </div>
+                                <div className="item">
+                                    <h2><span>Portfolio</span>
+                                    </h2>
+                                </div>
+                                <div className="item">
+                                    <h2><span>Portfolio</span>
+                                    </h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,6 +184,78 @@ export default function About() {
                                 </div>
                                 <div className="img">
                                     <img src="/assets/imgs/works/6.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 items">
+                            <div className="item">
+                                <div className="cont d-flex align-items-center">
+                                    <div>
+                                        <h5>Onyx Valet</h5>
+                                        <span>Logo</span>
+                                    </div>
+                                    <div className="ml-auto">
+                                        <Link href="/assets/imgs/works/7.jpg">
+                                            <i className="fa-solid fa-chevron-right"></i>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className="img">
+                                    <img src="/assets/imgs/works/7.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 items">
+                            <div className="item">
+                                <div className="cont d-flex align-items-center">
+                                    <div>
+                                        <h5>JRAYS Design Group Ltd.</h5>
+                                        <span>Logo</span>
+                                    </div>
+                                    <div className="ml-auto">
+                                        <Link href="/assets/imgs/works/8.jpg">
+                                            <i className="fa-solid fa-chevron-right"></i>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className="img">
+                                    <img src="/assets/imgs/works/8.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 items">
+                            <div className="item">
+                                <div className="cont d-flex align-items-center">
+                                    <div>
+                                        <h5>Staunhaus Capital</h5>
+                                        <span>Logo</span>
+                                    </div>
+                                    <div className="ml-auto">
+                                        <Link href="/assets/imgs/works/9.jpg">
+                                            <i className="fa-solid fa-chevron-right"></i>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className="img">
+                                    <img src="/assets/imgs/works/9.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 items">
+                            <div className="item">
+                                <div className="cont d-flex align-items-center">
+                                    <div>
+                                        <h5>RG Detailing</h5>
+                                        <span>Logo</span>
+                                    </div>
+                                    <div className="ml-auto">
+                                        <Link href="/assets/imgs/works/10.jpg">
+                                            <i className="fa-solid fa-chevron-right"></i>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className="img">
+                                    <img src="/assets/imgs/works/10.jpg" alt="" />
                                 </div>
                             </div>
                         </div>

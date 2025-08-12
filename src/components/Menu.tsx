@@ -53,11 +53,11 @@ export default function Menu() {
                             <Link href="#"> <i className="fab fa-instagram"></i> </Link>
                         </div>
                         <div className="item mt-30">
-                            <h5>Surrey, British Columbia, CA</h5>
+                            <h5>Canada</h5>
                         </div>
                         <div className="item mt-10">
                             <h5><Link href="#0">info@promoyourbiz.ca</Link></h5>
-                            <h5 className="underline"><Link href="#0">+1 840 841 25 69</Link></h5>
+                            <h5 className="underline"><Link href="#0">+1 (877) 458 4550</Link></h5>
                         </div>
                     </div>
                 </div>

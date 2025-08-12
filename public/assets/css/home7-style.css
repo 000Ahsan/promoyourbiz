@@ -1,6 +1,6 @@
 :root {
-  --bg-color: #232323;
-  --theme-color: #20255D;
+  --bg-color: #20255D;
+  --theme-color: #232323;
   --main-color: #F5D60D; }
 
 /* --------------- Menu --------------- */
@@ -509,19 +509,19 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 64px;
-  letter-spacing: -3px; }
+  letter-spacing: -1px; }
 
 h2 {
   font-size: 48px;
-  letter-spacing: -3px; }
+  letter-spacing: -1px; }
 
 h3 {
   font-size: 40px;
-  letter-spacing: -2px; }
+  letter-spacing: -1px; }
 
 h4 {
   font-size: 36px;
-  letter-spacing: -2px; }
+  letter-spacing: -1px; }
 
 h5 {
   font-size: 32px;
