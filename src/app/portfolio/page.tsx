@@ -10,7 +10,7 @@ export default function About() {
                         <div className="row justify-content-end">
                             <div className="col-lg-5">
                                 <div className="text mt-30">
-                                Explore case studies showcasing how we turned brand stories into high-performing websites.
+                                    Explore case studies showcasing how we turned brand stories into high-performing websites.
                                 </div>
                             </div>
                         </div>
@@ -184,78 +184,6 @@ export default function About() {
                                 </div>
                                 <div className="img">
                                     <img src="/assets/imgs/works/6.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 items">
-                            <div className="item">
-                                <div className="cont d-flex align-items-center">
-                                    <div>
-                                        <h5>Onyx Valet</h5>
-                                        <span>Logo</span>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <Link href="/assets/imgs/works/7.jpg">
-                                            <i className="fa-solid fa-chevron-right"></i>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="img">
-                                    <img src="/assets/imgs/works/7.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 items">
-                            <div className="item">
-                                <div className="cont d-flex align-items-center">
-                                    <div>
-                                        <h5>JRAYS Design Group Ltd.</h5>
-                                        <span>Logo</span>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <Link href="/assets/imgs/works/8.jpg">
-                                            <i className="fa-solid fa-chevron-right"></i>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="img">
-                                    <img src="/assets/imgs/works/8.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 items">
-                            <div className="item">
-                                <div className="cont d-flex align-items-center">
-                                    <div>
-                                        <h5>Staunhaus Capital</h5>
-                                        <span>Logo</span>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <Link href="/assets/imgs/works/9.jpg">
-                                            <i className="fa-solid fa-chevron-right"></i>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="img">
-                                    <img src="/assets/imgs/works/9.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 items">
-                            <div className="item">
-                                <div className="cont d-flex align-items-center">
-                                    <div>
-                                        <h5>RG Detailing</h5>
-                                        <span>Logo</span>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <Link href="/assets/imgs/works/10.jpg">
-                                            <i className="fa-solid fa-chevron-right"></i>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="img">
-                                    <img src="/assets/imgs/works/10.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
