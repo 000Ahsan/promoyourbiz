@@ -1,3 +1,4 @@
+import Services from "@/components/Services";
 import Link from "next/link";
 
 export default function About() {
@@ -6,11 +7,11 @@ export default function About() {
             <header className="about-hed section-padding pb-0">
                 <div className="container">
                     <div className="caption mb-80">
-                        <h1 className="sec-head"><span className="sub-head mr-30">About Us</span> Creative Designers. Skilled Developers. Growth-Driven Marketers.</h1>
-                        <div className="row justify-content-end">
-                            <div className="col-lg-5">
+                        <h1>Creative Designers. Skilled Developers. Growth-Driven Marketers.</h1>
+                        <div className="row">
+                            <div className="col-lg-12">
                                 <div className="text mt-30">
-                                    <p>Building standout digital experiences requires more than just technical skill — it demands a deep understanding of each brands unique identity. With a keen eye for design and a passion for innovation, we craft websites, apps, and strategies that capture attention and drive growth.</p>
+                                    <h6>Building standout digital experiences requires more than just technical skill — it demands a deep understanding of each brands unique identity. With a keen eye for design and a passion for innovation, we craft websites, apps, and strategies that capture attention and drive growth.</h6>
                                 </div>
                             </div>
                         </div>
@@ -79,80 +80,7 @@ export default function About() {
                 </div>
             </header>
 
-            <section className="services-dm container-fluid">
-                <div className="box sub-bg radius-30 section-padding mt-15">
-                    <div className="container">
-                        <div className="sec-head mb-100">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <h6 className="sub-head">Our Service Expertise</h6>
-                                </div>
-                                <div className="col-lg-5">
-                                    <h3 className="text-indent md-mb30">Your Vision, Brought to Life — and Then to Market.</h3>
-                                </div>
-                                <div className="col-lg-3">
-                                    <div className="text">
-                                        <p>We are a full-service digital agency specializing in design, development, and growth marketing.
-                                        Whether you need a standout brand, a high-performing website, or strategies that drive traffic and conversions — we are here to take your business to the next level.</p>
-                                        <Link href="/services" className="crv-butn mt-40">
-                                            <div className="d-flex">
-                                                <span className="text">Learn More</span>
-                                                <span className="icon">
-                                                    <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
-                                                </span>
-                                            </div>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row justify-content-end">
-                            <div className="col-lg-9">
-                                <div className="item d-flex align-items-center justify-between gap-5">
-                                    <div className="title">
-                                        <h2>Branding</h2>
-                                    </div>
-                                    <div className="text ml-auto">
-                                        <div className="d-flex align-items-center">
-                                            <p>Branding identity, Logo Design, Brand Strategy & Visual Language</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item d-flex align-items-center justify-between gap-5">
-                                    <div className="title">
-                                        <h2>Design</h2>
-                                    </div>
-                                    <div className="text ml-auto">
-                                        <div className="d-flex align-items-center">
-                                            <p>UI/UX Design, Web & App Design, Brand Identity, Visual Direction</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item d-flex align-items-center justify-between gap-5">
-                                    <div className="title">
-                                        <h2>Code</h2>
-                                    </div>
-                                    <div className="text ml-auto">
-                                        <div className="d-flex align-items-center">
-                                            <p>Website Development, Web Applications, Mobile Apps, CMS & E-commerce</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item d-flex align-items-center justify-between gap-5">
-                                    <div className="title">
-                                        <h2>Growth</h2>
-                                    </div>
-                                    <div className="text ml-auto">
-                                        <div className="d-flex align-items-center">
-                                            <p>SEO Optimization, Social Media Marketing, Performance Campaigns, Analytics & Strategy</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Services />
 
             <section className="intro-iner section-padding">
                 <div className="container">

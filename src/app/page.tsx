@@ -3,13 +3,15 @@
 import Link from "next/link";
 import { useState } from "react";
 import OnboardingModal from "@/components/OnboardingModal";
+import Services from "@/components/Services";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     return (
         <main>
             <header className="header-dm section-padding">
-                <div className="container-xl position-re">
+                <div className="container position-re">
                     <div className="row">
                         <div className="col-lg-9">
                             <div className="caption">
@@ -95,14 +97,14 @@ export default function Home() {
 
             <section className="intro-dm">
                 <div className="container">
-                    <div className="sec-head mb-100">
+                    <div className="sec-head mb-25">
                         <div className="row">
-                            <div className="col-lg-4">
-                                <h6 className="sub-head">Why Your Brand Matters</h6>
+                            <div className="col-lg-12">
+                                <h2 className="mb-40">Why Your Brand Matters</h2>
                             </div>
-                            <div className="col-lg-8">
-                                <h3 className="text-indent">Every brand has a spark that sets it apart. We believe your origin story, values, and vision are the most powerful assets you own. By centering your website around your why, you will connect with customers on a deeper level—fostering loyalty and advocacy rather than fleeting clicks.
-                                </h3>
+                            <div className="col-lg-12">
+                                <h6 className="font-normal">Every brand has a spark that sets it apart. We believe your origin story, values, and vision are the most powerful assets you own. By centering your website around your why, you will connect with customers on a deeper level—fostering loyalty and advocacy rather than fleeting clicks.
+                                </h6>
                                 <Link href="/about" className="crv-butn mt-40">
                                     <div className="d-flex">
                                         <span className="text">More About Us</span>
@@ -158,15 +160,13 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="works-dm section-padding">
+            <section className="works-dm pt-30 pb-30">
                 <div className="container">
+                    <div>
+                        <h2 className="mb-40">Our Featured Work</h2>
+                        <h6>Take a look at our projects. We've had the privilege of collaborating with businesses across diverse industries, helping them establish a strong online presence and achieve their digital goals.</h6>
+                    </div>
                     <div className="gallery row md-marg">
-                        <div className="items col-lg-6 order-md-1">
-                            <div className="sec-head">
-                                <h6 className="sub-head mb-15">Featured Works</h6>
-                                <h2 className="fz-60">Take a look at <br /> our projects</h2>
-                            </div>
-                        </div>
                         <div className="items col-lg-6 order-md-2">
                             <div className="item">
                                 <div className="img">
@@ -184,8 +184,9 @@ export default function Home() {
                                         <span>WordPress</span>
                                     </div>
                                     <h6>
-                                        <Link target="_blank" href="https://pacific-stairs.sayanisbiz.com/">Pacific Stairs & Railings</Link>
+                                        <Link className="font-bold" target="_blank" href="https://pacific-stairs.sayanisbiz.com/">Pacific Stairs & Railings</Link>
                                     </h6>
+                                    <p>Pacific Stairs & Railings is a business that specializes in the design and installation of stairs and railings. They approached us with a clear vision for their website, and we delivered a responsive and user-friendly platform that showcased their products and services effectively.</p>
                                 </div>
                             </div>
                         </div>
@@ -206,8 +207,9 @@ export default function Home() {
                                         <span>WordPress</span>
                                     </div>
                                     <h6>
-                                        <Link target="_blank" href="https://313consultancy.org/">313 Consultancy</Link>
+                                        <Link className="font-bold" target="_blank" href="https://313consultancy.org/">313 Consultancy</Link>
                                     </h6>
+                                    <p>313 Consultancy offers a comprehensive range of services designed to meet the diverse needs of the aviation industry. From strategic planning and operations consulting to technical inspections and training, our expert team provides customized solutions that drive efficiency, sustainability, and innovation.</p>
                                 </div>
                             </div>
                         </div>
@@ -228,8 +230,9 @@ export default function Home() {
                                         <span>WordPress</span>
                                     </div>
                                     <h6>
-                                        <Link target="_blank" href="https://southridgedisposal.com/">South Ridge Disposal Ltd</Link>
+                                        <Link className="font-bold" target="_blank" href="https://southridgedisposal.com/">South Ridge Disposal Ltd</Link>
                                     </h6>
+                                    <p>South Ridge Disposal Ltd is a business that specializes in the disposal of waste and recyclable materials. They approached us with a clear vision for their website, and we delivered a responsive and user-friendly platform that showcased their products and services effectively.</p>
                                 </div>
                             </div>
                         </div>
@@ -250,12 +253,15 @@ export default function Home() {
                                         <span>WordPress</span>
                                     </div>
                                     <h6>
-                                        <Link target="_blank" href="https://smartchoicebuilders.ca/">Smart Choice Builders</Link>
+                                        <Link className="font-bold" target="_blank" href="https://smartchoicebuilders.ca/">Smart Choice Builders</Link>
                                     </h6>
+                                    <p>Smart Choice Builders is a business that specializes in the construction of buildings and structures. They approached us with a clear vision for their website, and we delivered a responsive and user-friendly platform that showcased their products and services effectively.</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="items col-lg-6 order-md-2">
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-12">
                             <Link href="/portfolio" className="crv-butn mt-100">
                                 <div className="d-flex">
                                     <span className="text">View all Projects</span>
@@ -269,82 +275,11 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="services-dm sub-bg radius-30 section-padding">
-                <div className="container section-padding pt-0">
-                    <div className="sec-head mb-100">
-                        <div className="row">
-                            <div className="col-lg-4">
-                                <h6 className="sub-head">Our Service Expertise</h6>
-                            </div>
-                            <div className="col-lg-5">
-                                <h3 className="text-indent md-mb15">We help you to build a creative digital business</h3>
-                            </div>
-                            <div className="col-lg-3">
-                                <div className="text">
-                                    <p>We are a brand marketing agency with expertise, and we are on a mission
-                                        to help you take the next step in your business.</p>
-                                    <Link href="/services" className="crv-butn mt-40">
-                                        <div className="d-flex">
-                                            <span className="text">Learn More</span>
-                                            <span className="icon">
-                                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
-                                            </span>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row justify-content-end">
-                        <div className="col-lg-9">
-                            <div className="item d-flex align-items-center justify-between gap-5">
-                                <div className="title">
-                                    <h2>Branding</h2>
-                                </div>
-                                <div className="text ml-auto">
-                                    <div className="d-flex align-items-center">
-                                        <p>Branding identity, Logo Design, Brand Strategy & Visual Language</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item d-flex align-items-center justify-between gap-5">
-                                <div className="title">
-                                    <h2>Design</h2>
-                                </div>
-                                <div className="text ml-auto">
-                                    <div className="d-flex align-items-center">
-                                        <p>UI/UX Design, Web & App Design, Brand Identity, Visual Direction</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item d-flex align-items-center justify-between gap-5">
-                                <div className="title">
-                                    <h2>Code</h2>
-                                </div>
-                                <div className="text ml-auto">
-                                    <div className="d-flex align-items-center">
-                                        <p>Website Development, Web Applications, Mobile Apps, CMS & E-commerce</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item d-flex align-items-center justify-between gap-5">
-                                <div className="title">
-                                    <h2>Growth</h2>
-                                </div>
-                                <div className="text ml-auto">
-                                    <div className="d-flex align-items-center">
-                                        <p>SEO Optimization, Social Media Marketing, Performance Campaigns, Analytics & Strategy</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Services />
 
             <section className="intro-vid ontop">
                 <div className="container">
-                    <div className="bg-img" data-background="/assets/imgs/intro.jpg">
+                    <div className="bg-img" data-background="/assets/imgs/pyb-intro-video-snap.png">
                         <div className="states">
                             <div className="imgs mb-30">
                                 <div className="img fit-img">
@@ -358,7 +293,7 @@ export default function Home() {
                             <p>Approaches are prominently featured on many architect websites.</p>
                         </div>
                         <div className="play-button">
-                            <Link href="https://youtu.be/AzwC6umvd1s" className="vid">
+                            <Link href="/assets/videos/pyb-intro-video.mp4" className="vid">
                                 <i className="fas fa-play"></i>
                             </Link>
                         </div>
@@ -366,103 +301,30 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="testimonials-dm section-padding pb-0">
-                <div className="container">
-                    <div className="sec-head mb-100">
-                        <div className="row">
-                            <div className="col-lg-5">
-                                <h6 className="sub-head">What clients say?</h6>
-                            </div>
-                            <div className="col-lg-7">
-                                <h3 className="text-indent">We have got a Proven <br /> Formula for Success!
-                                </h3>
-                                <div className="states d-flex mt-40">
-                                    <div>
-                                        <h6><i className="fa-solid fa-check"></i> 7k+ Customers</h6>
-                                    </div>
-                                    <div className="ml-80">
-                                        <h6><i className="fa-solid fa-check"></i> 99% Satisfaction</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="swiper process-swiper swiper-container">
-                        <div className="swiper-wrapper">
-                            <div className="swiper-slide">
-                                <div className="item">
-                                    <div className="d-flex mb-30">
-                                        <div className="img">
-                                            <div className="fit-img">
-                                                <img src="/assets/imgs/testim/avatar4.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5>Working with this team transformed our online presence. Their process unveiled our true voice, and our site now speaks directly to our ideal clients</h5>
-                                    <div className="d-flex mt-30">
-                                        <span className="sub-color">Jordan Lee, Founder of EcoBlend</span>
-                                        <div className="stars ml-auto">
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="item">
-                                    <div className="d-flex mb-30">
-                                        <div className="img">
-                                            <div className="fit-img">
-                                                <img src="/assets/imgs/testim/avatar2.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5>The storytelling framework connected us with customers who share our vision. We have never felt more aligned with our digital identity</h5>
-                                    <div className="d-flex mt-30">
-                                        <span className="sub-color">Aron Whites, CEO of Meridian Homes</span>
-                                        <div className="stars ml-auto">
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-pagination"></div>
-                    </div>
-                </div>
-            </section>
+            <Testimonials />
 
             <section className="blog-sa">
                 <div className="container section-padding">
-                    <div className="sec-head mb-100">
+                    <div className="sec-head mb-30">
                         <div className="row">
-                            <div className="col-lg-4">
-                                <h6 className="sub-head">Latest Articles</h6>
-                            </div>
-                            <div className="col-lg-8">
-                                <h3 className="text-indent">The place that we share everything related to design trends,
-                                    tips and more.
-                                </h3>
+                            <div className="col-lg-12">
+                                <h2 className="mb-40">Latest Articles</h2>
+                                <h6>The place that we share everything related to design trends, tips and more.
+                                </h6>
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="item md-mb50">
-                                <div className="img">
+                                <div>
                                     <img src="/assets/imgs/blog/1.jpg" alt="" />
                                 </div>
-                                <div className="cont">
+                                <div className="cont mt-30">
                                     <h6>
-                                        <Link href="/">How to Create a Brand Identity for Your Business <br /> using AI?</Link>
+                                        <Link className="font-bold" href="/">How to Create a Brand Identity for Your Business using AI?</Link>
                                     </h6>
+                                    <p>Building a brand identity used to take weeks of meetings, expensive agencies, and endless revisions. That’s no longer the case. AI has changed the game — if you know how to use it properly.</p>
                                     <div className="info d-flex align-items-center mt-20">
                                         <Link href="#0" className="tag">
                                             <span>Design Trends</span>
@@ -476,16 +338,17 @@ export default function Home() {
                         </div>
                         <div className="col-lg-6">
                             <div className="item">
-                                <div className="img">
+                                <div>
                                     <img src="/assets/imgs/blog/2.jpg" alt="" />
                                 </div>
                                 <div className="cont mt-30">
                                     <h6>
-                                        <Link href="/">Common UX painpoints in Dashboard-related <br /> projects</Link>
+                                        <Link className="font-bold" href="/">Common UX painpoints in Dashboard-related projects</Link>
                                     </h6>
+                                    <p>Dashboards are supposed to make data easy to understand. But most dashboards fail. They are cluttered, confusing, and don't actually help anyone make better decisions.</p>
                                     <div className="info d-flex align-items-center mt-20">
                                         <Link href="#0" className="tag">
-                                            <span>Experience</span>
+                                            <span>User Experience</span>
                                         </Link>
                                         <Link href="#0" className="date">
                                             <span>/ May 15, 2024</span>
@@ -493,6 +356,18 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <Link href="/blogs" className="crv-butn mt-100">
+                                <div className="d-flex">
+                                    <span className="text">View all Blogs</span>
+                                    <span className="icon">
+                                        <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                    </span>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

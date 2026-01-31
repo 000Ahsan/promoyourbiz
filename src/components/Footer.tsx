@@ -3,94 +3,88 @@
 import Link from "next/link";
 
 export default function Footer() {
-  return (
-    <footer className="footer-sa pb-80">
-        <div className="container section-padding">
-            <div className="sec-head mb-80">
-                <div className="row">
-                    <div className="col-lg-5">
-                        <Link href="#" className="logo md-mb80">
-                            <img src="/assets/imgs/Logo-light.svg" alt="" />
-                        </Link>
-                    </div>
-                    <div className="col-lg-6">
-                        <h3 className="text-indent">Ready to bring your brand story to life?
-                        </h3>
+    return (
+        <footer className="footer-sa pb-80">
+            <div className="container section-padding">
+                <div className="sec-head mb-80">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <Link href="#" className="logo mb-40">
+                                <img src="/assets/imgs/Logo-light.svg" alt="" />
+                            </Link>
+                            <h2 className="mb-40">Ready to bring your brand story to life?
+                            </h2>
+                            <h6>
+                                We are a digital marketing agency that helps businesses grow their online presence and increase their revenue. We are a digital marketing agency that helps businesses grow their online presence and increase their revenue.
+                            </h6>
+                        </div>
+                        <div className="col-lg-12">
 
-                        <button 
-                            className="crv-butn mt-40"
-                            style={{ background: 'none', border: 'none', cursor: 'pointer' }}
-                        >
-                            <div className="d-flex">
-                                <span className="text">Schedule a Discovery Call</span>
-                                <span className="icon">
-                                    <img src="/common/imgs/icons/arrow-top-right.svg" alt="" />
-                                </span>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div className="contact-info">
-                <div className="row">
-                    <div className="col-lg-6 offset-lg-5">
-                        <div className="row">
-                            <div className="col-md-6">
-                                <div className="item">
-                                    <span className="sub-color">location</span>
-                                    <p>Canada</p>
+
+                            <button
+                                className="crv-butn mt-40"
+                                style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+                            >
+                                <div className="d-flex">
+                                    <span className="text">Schedule a Discovery Call</span>
+                                    <span className="icon">
+                                        <img src="/common/imgs/icons/arrow-top-right.svg" alt="" />
+                                    </span>
                                 </div>
-                            </div>
-                            <div className="col-md-6 d-flex justify-content-end justify-end">
-                                <div className="item">
-                                    <span className="sub-color">inquiry</span>
-                                    <p>info@promoyourbiz.ca</p>
-                                    <p>+1-877-246-0914</p>
-                                </div>
-                            </div>
+                            </button>
                         </div>
                     </div>
-                    <div className="col-lg-6 offset-lg-5">
-                        <div className="social-icon">
-                            <Link href="#0">
-                                <i className="fa-brands fa-x-twitter"></i>
-                            </Link>
-                            <Link href="#0">
-                                <i className="fa-brands fa-instagram"></i>
-                            </Link>
-                            <Link href="#0">
-                                <i className="fa-brands fa-dribbble"></i>
-                            </Link>
-                            <Link href="#0">
-                                <i className="fa-brands fa-behance"></i>
-                            </Link>
-                            <Link href="#0">
-                                <i className="fa-brands fa-github"></i>
-                            </Link>
+                </div>
+                <div className="contact-info">
+                    <div className="row">
+                        <div className="col-6">
+                            <div className="item">
+                                <span className="sub-color">location</span>
+                                <p>Surrey, BC, Canada</p>
+                            </div>
+                        </div>
+                        <div className="col-6">
+                            <div className="item">
+                                <span className="sub-color">inquiry</span>
+                                <p>info@promoyourbiz.ca</p>
+                                <p>+1-877-246-0914</p>
+                            </div>
+                        </div>
+                        <div className="col-lg-12">
+                            <div className="social-icon">
+                                <Link href="#0">
+                                    <i className="fa-brands fa-instagram"></i>
+                                </Link>
+                                <Link href="#0">
+                                    <i className="fa-brands fa-facebook"></i>
+                                </Link>
+                                <Link href="#0">
+                                    <i className="fa-brands fa-linkedin-in"></i>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div className="sub-footer">
-            <div className="container bord-thin-top-light pt-50">
-                <div className="row">
-                    <div className="col-lg-8">
-                        <div className="copy sub-color md-mb50">
-                            <p>© 2025-26 <Link href="#0">Promo Your Biz</Link>. All Right Reserved</p>
+            <div className="sub-footer">
+                <div className="container bord-thin-top-light pt-50">
+                    <div className="row">
+                        <div className="col-lg-8">
+                            <div className="copy sub-color md-mb50">
+                                <p>© 2025-26 <Link href="#0">Promo Your Biz</Link>. All Right Reserved</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="col-lg-4 d-flex justify-content-end">
-                        <div className="links sub-color d-flex justify-content-between">
-                            <Link href="/">Home</Link>
-                            <Link href="/about">About</Link>
-                            <Link href="/services">Services</Link>
-                            <Link href="/portfolio">Portfolio</Link>
+                        <div className="col-lg-4 d-flex justify-content-end">
+                            <div className="links sub-color d-flex justify-content-between">
+                                <Link href="/">Home</Link>
+                                <Link href="/about">About</Link>
+                                <Link href="/services">Services</Link>
+                                <Link href="/portfolio">Portfolio</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-  );
+        </footer>
+    );
 }
