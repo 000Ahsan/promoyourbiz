@@ -5,6 +5,7 @@ import { useState } from "react";
 import OnboardingModal from "@/components/OnboardingModal";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
+import OurPartners from "@/components/OurPartners";
 
 export default function Home() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -119,46 +120,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="clients-dm">
-                <div className="main-marq shadow-off">
-                    <div className="slide-har st1">
-                        <div className="box">
-                            <div className="item">
-                                <img src="/assets/imgs/brands/1.svg" alt="" />
-                            </div>
-                            <div className="item">
-                                <img src="/assets/imgs/brands/2.svg" alt="" />
-                            </div>
-                            <div className="item">
-                                <img src="/assets/imgs/brands/3.svg" alt="" />
-                            </div>
-                            <div className="item">
-                                <img src="/assets/imgs/brands/4.svg" alt="" />
-                            </div>
-                            <div className="item">
-                                <img src="/assets/imgs/brands/5.svg" alt="" />
-                            </div>
-                        </div>
-                        <div className="box">
-                            <div className="item">
-                                <img src="/assets/imgs/brands/1.svg" alt="" />
-                            </div>
-                            <div className="item">
-                                <img src="/assets/imgs/brands/2.svg" alt="" />
-                            </div>
-                            <div className="item">
-                                <img src="/assets/imgs/brands/3.svg" alt="" />
-                            </div>
-                            <div className="item">
-                                <img src="/assets/imgs/brands/4.svg" alt="" />
-                            </div>
-                            <div className="item">
-                                <img src="/assets/imgs/brands/5.svg" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <OurPartners />
 
             <section className="works-dm pt-30 pb-30">
                 <div className="container">

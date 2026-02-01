@@ -1,3 +1,4 @@
+import OurPartners from "@/components/OurPartners";
 import Services from "@/components/Services";
 import Link from "next/link";
 
@@ -75,7 +76,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className="fit-img radius-15">
-                        <img src="/assets/imgs/about/header/1.jpg" alt="" />
+                        <img src="/assets/imgs/promoyourbiz-about-banner.jpg" alt="" />
                     </div>
                 </div>
             </header>
@@ -88,11 +89,11 @@ export default function About() {
                         <div className="col-lg-5">
                             <div className="img-box">
                                 <div className="img fit-img">
-                                    <img src="/assets/imgs/about/intro1.jpg" alt="" />
+                                    <img src="/assets/imgs/promoyourbiz-about-1.jpg" alt="" />
                                 </div>
                                 <div className="states">
                                     <h2 className="mb-10 fw-600">7k+</h2>
-                                    <span className="text-u fz-12 fw-500">Satisfaction <br /> Clients</span>
+                                    <span className="text-u fz-12 fw-500">Happy <br /> Clients</span>
                                 </div>
                                 <div className="just-shape">
                                     <div className="shap-right-top">
@@ -114,12 +115,12 @@ export default function About() {
                                 </div>
                                 <div className="butn-vid d-flex align-items-center">
                                     <div className="play-button">
-                                        <Link href="https://youtu.be/AzwC6umvd1s" className="vid">
-                                            <i className="fas fa-play"></i>
+                                        <Link target="_blank" href="https://www.instagram.com/promoyourbiz/" className="vid">
+                                            <i className="fab fa-instagram"></i>
                                         </Link>
                                     </div>
                                     <div className="cont">
-                                        <span>Lets see <br /> how we did it.</span>
+                                        <span>Checkout our Social <br /> Presence!</span>
                                     </div>
                                     <div className="shaps bottom">
                                         <div className="shap-right-top">
@@ -144,47 +145,54 @@ export default function About() {
                         </div>
                         <div className="col-lg-6">
                             <div className="sec-head mb-60">
-                                <h6 className="sub-head mb-10">Who we are?</h6>
-                                <h3>Elevating brands globally with innovative strategies and visionary design</h3>
+                                <h2 className="mb-10">Who we are?</h2>
+                                <h6>Elevating brands globally with innovative strategies and visionary design</h6>
                             </div>
                             <div className="row justify-content-center">
                                 <div className="col-lg-10">
                                     <div className="accordion" id="accordionExample">
-                                        <div className="accordion-item active">
-                                            <h4 className="accordion-header" id="heading2">
-                                                <button className="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapse2"
-                                                    aria-expanded="false" aria-controls="collapse2">
-                                                    Whats Our mission?
+                                        <div className="accordion-item">
+                                            <h4 className="accordion-header" id="heading1">
+                                                <button className="accordion-button" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse1"
+                                                    aria-expanded="true" aria-controls="collapse1">
+                                                    Build Strong Foundations
                                                 </button>
                                             </h4>
-                                            <div id="collapse2" className="accordion-collapse collapse show"
+                                            <div id="collapse1" className="accordion-collapse collapse show"
+                                                aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                                                <div className="accordion-body">
+                                                    <p>Our mission is to help businesses build solid brand and digital foundations that are clear, consistent, and scalable. We focus on getting the fundamentals right so growth isn't accidental — its intentional.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="accordion-item">
+                                            <h4 className="accordion-header" id="heading2">
+                                                <button className="accordion-button" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse2"
+                                                    aria-expanded="true" aria-controls="collapse2">
+                                                    Execute With Purpose
+                                                </button>
+                                            </h4>
+                                            <div id="collapse2" className="accordion-collapse collapse"
                                                 aria-labelledby="heading2" data-bs-parent="#accordionExample">
                                                 <div className="accordion-body">
-                                                    <p>How quick is quick? For most design, we are talking 2-3
-                                                        business days.
-                                                        We balance speed with quality,ensuring you get top-north
-                                                        design
-                                                        swiftly</p>
+                                                    <p>We believe great ideas mean nothing without proper execution. Every design, line of code, and strategy we deliver is built with a clear goal: performance, usability, and long-term impact.</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="accordion-item">
                                             <h4 className="accordion-header" id="heading3">
-                                                <button className="accordion-button collapsed" type="button"
+                                                <button className="accordion-button" type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#collapse3"
-                                                    aria-expanded="false" aria-controls="collapse3">
-                                                    Our Culture & Our Studio
+                                                    aria-expanded="true" aria-controls="collapse3">
+                                                    Drive Real Growth
                                                 </button>
                                             </h4>
                                             <div id="collapse3" className="accordion-collapse collapse"
                                                 aria-labelledby="heading3" data-bs-parent="#accordionExample">
                                                 <div className="accordion-body">
-                                                    <p>How quick is quick? For most design, we are talking 2-3
-                                                        business days.
-                                                        We balance speed with quality,ensuring you get top-north
-                                                        design
-                                                        swiftly</p>
+                                                    <p>We don't chase vanity metrics. Our mission is to create systems that attract the right audience, convert attention into action, and support sustainable business growth.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -228,134 +236,39 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="container-fluid">
-
-                <div className="section-padding sub-bg radius-30">
-
-                    <div className="testimonials-ds">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-5">
-                                    <div className="qoute-icon md-mb50">
-                                        <div className="text">
-                                            <img src="/assets/imgs/about/testim/Vector_Cricle_Text.svg" alt="" />
-                                        </div>
-                                        <div className="icon">
-                                            <img src="/assets/imgs/about/testim/vector_quote.svg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-7">
-                                    <div className="swiper testim-swiper swiper-container">
-                                        <div className="swiper-wrapper">
-                                            <div className="swiper-slide">
-                                                <div className="item">
-                                                    <div className="text">
-                                                        <h4>Their ability to deliver high-quality design and clean, functional UI stood out from day one. A team thats passionate, professional, and full of creativity. Exactly what we needed — highly recommended.</h4>
-                                                    </div>
-                                                    <div
-                                                        className="info d-flex align-items-center mt-40 pt-30 bord-thin-top-light">
-                                                        <div>
-                                                            <div className="img-author">
-                                                                <img src="/assets/imgs/about/testim/avatar1.jpg"
-                                                                    alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div className="info-text">
-                                                            <span>Bradley Gordon</span>
-                                                            <p>CEO & Founder, Archin Studio</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="swiper-slide">
-                                                <div className="item">
-                                                    <div className="text">
-                                                        <h4>From branding to development, their attention to detail and creative energy made all the difference. A professional, forward-thinking team that truly understands digital — highly recommended.</h4>
-                                                    </div>
-                                                    <div
-                                                        className="info d-flex align-items-center mt-40 pt-30 bord-thin-top-light">
-                                                        <div>
-                                                            <div className="img-author">
-                                                                <img src="/assets/imgs/about/testim/avatar2.jpg"
-                                                                    alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div className="info-text">
-                                                            <span>Bradley Gordon</span>
-                                                            <p>CEO & Founder, Archin Studio</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="swiper-pagination"></div>
-                                    </div>
+            <section className="container-fluid sub-bg radius-30">
+                <div className="container section-padding">
+                    <div className="row">
+                        <div className="col-lg-5">
+                            <div className="flex items-center justify-center">
+                                <img src="/assets/imgs/promoyourbiz-icon-yellow.png" alt="" />
+                            </div>
+                        </div>
+                        <div className="col-lg-7">
+                            <div className="text">
+                                <h4>Promo Your Biz was built on one simple idea: branding, design, code, and growth must work together. When they don't, businesses stall. When they do, growth becomes intentional.We focus on clarity, clean execution, and building digital foundations that actually support long-term success. No shortcuts. No gimmicks. Just work that moves businesses forward.</h4>
+                            </div>
+                            <div
+                                className="info d-flex align-items-center mt-40 pt-30 bord-thin-top-light">
+                                <div className="info-text">
+                                    <span>Rizwan Sayani</span>
+                                    <p>Founder & CEO, Promo Your Biz</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div className="clients-ds mt-100">
-                        <div className="container">
-                            <div className="sec-head mb-80">
-                                <h6 className="sub-head">Partner with +150 brands</h6>
-                            </div>
-                            <div className="row sm-marg">
-                                <div className="col-lg col-md-4 col-6 md-mb30">
-                                    <div className="item d-flex align-items-center justify-content-center">
-                                        <div className="img">
-                                            <img src="/assets/imgs/about/clients/1.svg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg col-md-4 col-6 md-mb30">
-                                    <div className="item d-flex align-items-center justify-content-center">
-                                        <div className="img">
-                                            <img src="/assets/imgs/about/clients/2.svg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg col-md-4 col-6 md-mb30">
-                                    <div className="item d-flex align-items-center justify-content-center">
-                                        <div className="img">
-                                            <img src="/assets/imgs/about/clients/3.svg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg col-md-4 col-6 sm-mb30">
-                                    <div className="item d-flex align-items-center justify-content-center">
-                                        <div className="img">
-                                            <img src="/assets/imgs/about/clients/4.svg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg col-md-4 col-6">
-                                    <div className="item d-flex align-items-center justify-content-center">
-                                        <div className="img">
-                                            <img src="/assets/imgs/about/clients/5.svg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
             </section>
 
             <div className="team-mp">
-                <div className="container section-padding bord-thin-top-light">
-                    <div className="sec-head mb-80">
+                <div className="container section-padding">
+                    <div className="mb-80">
                         <div className="row">
-                            <div className="col-lg-7">
-                                <h6 className="sub-head">Teams Leaders</h6>
+                            <div className="col-lg-12">
+                                <h2 className="mb-40">Teams Leaders</h2>
                             </div>
-                            <div className="col-lg-4 d-flex align-items-center">
-                                <div className="ml-auto">
-                                    <p>Every product we build is powered by passion. Meet the team that makes it happen.</p>
-                                </div>
+                            <div className="col-lg-12">
+                                <h6>Every product we build is powered by passion. Meet the team that makes it happen. We are a team of innovators, designers, and developers who are passionate about building great products. </h6>
                             </div>
                         </div>
                     </div>
@@ -363,26 +276,17 @@ export default function About() {
                         <div className="d-flex">
                             <div>
                                 <div className="img fit-img">
-                                    <img src="/assets/imgs/about/team/1.png" alt="" />
+                                    {/* <img src="/assets/imgs/team/rizwan-sayani.png" alt="" /> */}
                                 </div>
                             </div>
                             <div className="cont">
                                 <h2>Rizwan Sayani</h2>
-                                <span>Founder</span>
+                                <span>Founder / CEO</span>
                             </div>
                             <div className="ml-auto">
                                 <div className="social-icon">
-                                    <Link href="#0">
-                                        <i className="fa-brands fa-x-twitter"></i>
-                                    </Link>
-                                    <Link href="#0">
-                                        <i className="fa-brands fa-instagram"></i>
-                                    </Link>
-                                    <Link href="#0">
-                                        <i className="fa-brands fa-dribbble"></i>
-                                    </Link>
-                                    <Link href="#0">
-                                        <i className="fa-brands fa-behance"></i>
+                                    <Link href="https://www.linkedin.com/in/rizwan-r-sayani/">
+                                        <i className="fa-brands fa-linkedin"></i>
                                     </Link>
                                 </div>
                             </div>
@@ -392,20 +296,17 @@ export default function About() {
                         <div className="d-flex">
                             <div>
                                 <div className="img fit-img">
-                                    <img src="/assets/imgs/about/team/2.png" alt="" />
+                                    {/* <img src="/assets/imgs/team/zehra-sayani.png" alt="" /> */}
                                 </div>
                             </div>
                             <div className="cont">
                                 <h2>Zehra Sayani</h2>
-                                <span>Co-Founder</span>
+                                <span>Co-Founder / Manager</span>
                             </div>
                             <div className="ml-auto">
                                 <div className="social-icon">
-                                    <Link href="#0">
-                                        <i className="fa-brands fa-x-twitter"></i>
-                                    </Link>
-                                    <Link href="#0">
-                                        <i className="fa-brands fa-instagram"></i>
+                                    <Link href="https://www.linkedin.com/in/zehra-r-sayani-37893735/">
+                                        <i className="fa-brands fa-linkedin"></i>
                                     </Link>
                                 </div>
                             </div>
@@ -415,7 +316,7 @@ export default function About() {
                         <div className="d-flex">
                             <div>
                                 <div className="img fit-img">
-                                    <img src="/assets/imgs/about/team/3.png" alt="" />
+                                    {/* <img src="/assets/imgs/team/shairoz-dewji.png" alt="" /> */}
                                 </div>
                             </div>
                             <div className="cont">
@@ -424,14 +325,8 @@ export default function About() {
                             </div>
                             <div className="ml-auto">
                                 <div className="social-icon">
-                                    <Link href="#0">
-                                        <i className="fa-brands fa-x-twitter"></i>
-                                    </Link>
-                                    <Link href="#0">
-                                        <i className="fa-brands fa-dribbble"></i>
-                                    </Link>
-                                    <Link href="#0">
-                                        <i className="fa-brands fa-behance"></i>
+                                    <Link href="https://www.linkedin.com/in/shairoz-dewji-37b84489/">
+                                        <i className="fa-brands fa-linkedin"></i>
                                     </Link>
                                 </div>
                             </div>
@@ -441,23 +336,57 @@ export default function About() {
                         <div className="d-flex">
                             <div>
                                 <div className="img fit-img">
-                                    <img src="/assets/imgs/about/team/4.png" alt="" />
+                                    {/* <img src="/assets/imgs/team/ahsan-kamran.png" alt="" /> */}
                                 </div>
                             </div>
                             <div className="cont">
                                 <h2>Ahsan Kamran</h2>
-                                <span>Senior Developer</span>
+                                <span>Senior Full Stack Engineer</span>
                             </div>
                             <div className="ml-auto">
                                 <div className="social-icon">
-                                    <Link href="#0">
-                                        <i className="fa-brands fa-instagram"></i>
+                                    <Link href="https://www.linkedin.com/in/ahsankamran000/">
+                                        <i className="fa-brands fa-linkedin"></i>
                                     </Link>
-                                    <Link href="#0">
-                                        <i className="fa-brands fa-dribbble"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="d-flex">
+                            <div>
+                                <div className="img fit-img">
+                                    {/* <img src="/assets/imgs/team/ahsan-kamran.png" alt="" /> */}
+                                </div>
+                            </div>
+                            <div className="cont">
+                                <h2>Arooba Ashraf</h2>
+                                <span>Lead Designer</span>
+                            </div>
+                            <div className="ml-auto">
+                                <div className="social-icon">
+                                    <Link href="https://www.linkedin.com/in/arooba-ashraf/">
+                                        <i className="fa-brands fa-linkedin"></i>
                                     </Link>
-                                    <Link href="#0">
-                                        <i className="fa-brands fa-behance"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="d-flex">
+                            <div>
+                                <div className="img fit-img">
+                                    {/* <img src="/assets/imgs/team/ahsan-kamran.png" alt="" /> */}
+                                </div>
+                            </div>
+                            <div className="cont">
+                                <h2>Ali Rashid</h2>
+                                <span>Content Writing Expert</span>
+                            </div>
+                            <div className="ml-auto">
+                                <div className="social-icon">
+                                    <Link href="https://www.linkedin.com/in/ali-rashid-2877b8228/">
+                                        <i className="fa-brands fa-linkedin"></i>
                                     </Link>
                                 </div>
                             </div>
@@ -466,7 +395,7 @@ export default function About() {
                 </div>
             </div>
 
-
+            <OurPartners />
 
         </main>
     );
