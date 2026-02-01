@@ -6,6 +6,7 @@ import OnboardingModal from "@/components/OnboardingModal";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import OurPartners from "@/components/OurPartners";
+import portfolioData from "@/data/portfolio";
 
 export default function Home() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -129,98 +130,33 @@ export default function Home() {
                         <h6>Take a look at our projects. We've had the privilege of collaborating with businesses across diverse industries, helping them establish a strong online presence and achieve their digital goals.</h6>
                     </div>
                     <div className="gallery row md-marg">
-                        <div className="items col-lg-6 order-md-2">
-                            <div className="item">
-                                <div className="img">
-                                    <img src="/assets/imgs/works/1.jpg" alt="" />
-                                    <div className="tags">
-                                        <Link href="#0">Website</Link>
-                                        <Link href="#0">UI/UX</Link>
-                                        <Link href="#0">illustration</Link>
+                        {portfolioData.sort(() => Math.random() - 0.5).slice(0, 4).map((item, index) => (
+                            <div className="items col-lg-6 order-md-2" key={index}>
+                                <div className="item">
+                                    <div className="img">
+                                        <img src={item.image} alt="" />
+                                        <div className="tags">
+                                            {item.tags.map((tag, index) => (
+                                                <Link key={index} href="#0">{tag}</Link>
+                                            ))}
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="cont mt-30">
-                                    <div className="info sub-color mb-10">
-                                        <span>2023</span>
-                                        <span className="dot"></span>
-                                        <span>WordPress</span>
+                                    <div className="cont mt-30">
+                                        <div className="info sub-color mb-10">
+                                            <span>{item.created}</span>
+                                            <span className="dot"></span>
+                                            <span>{item.technologies.map((tech, index) => (
+                                                <span key={index}>{tech}</span>
+                                            ))}</span>
+                                        </div>
+                                        <h6>
+                                            <Link className="font-bold" target="_blank" href={item.link}>{item.title}</Link>
+                                        </h6>
+                                        <p>{item.description}</p>
                                     </div>
-                                    <h6>
-                                        <Link className="font-bold" target="_blank" href="https://pacific-stairs.sayanisbiz.com/">Pacific Stairs & Railings</Link>
-                                    </h6>
-                                    <p>Pacific Stairs & Railings is a business that specializes in the design and installation of stairs and railings. They approached us with a clear vision for their website, and we delivered a responsive and user-friendly platform that showcased their products and services effectively.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div className="items col-lg-6 order-md-2">
-                            <div className="item">
-                                <div className="img">
-                                    <img src="/assets/imgs/works/3.jpg" alt="" />
-                                    <div className="tags">
-                                        <Link href="#0">Website</Link>
-                                        <Link href="#0">UI/UX</Link>
-                                        <Link href="#0">illustration</Link>
-                                    </div>
-                                </div>
-                                <div className="cont mt-30">
-                                    <div className="info sub-color mb-10">
-                                        <span>2023</span>
-                                        <span className="dot"></span>
-                                        <span>WordPress</span>
-                                    </div>
-                                    <h6>
-                                        <Link className="font-bold" target="_blank" href="https://313consultancy.org/">313 Consultancy</Link>
-                                    </h6>
-                                    <p>313 Consultancy offers a comprehensive range of services designed to meet the diverse needs of the aviation industry. From strategic planning and operations consulting to technical inspections and training, our expert team provides customized solutions that drive efficiency, sustainability, and innovation.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="items col-lg-6 order-md-2">
-                            <div className="item">
-                                <div className="img">
-                                    <img src="/assets/imgs/works/4.jpg" alt="" />
-                                    <div className="tags">
-                                        <Link href="#0">Website</Link>
-                                        <Link href="#0">UI/UX</Link>
-                                        <Link href="#0">illustration</Link>
-                                    </div>
-                                </div>
-                                <div className="cont mt-30">
-                                    <div className="info sub-color mb-10">
-                                        <span>2023</span>
-                                        <span className="dot"></span>
-                                        <span>WordPress</span>
-                                    </div>
-                                    <h6>
-                                        <Link className="font-bold" target="_blank" href="https://southridgedisposal.com/">South Ridge Disposal Ltd</Link>
-                                    </h6>
-                                    <p>South Ridge Disposal Ltd is a business that specializes in the disposal of waste and recyclable materials. They approached us with a clear vision for their website, and we delivered a responsive and user-friendly platform that showcased their products and services effectively.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="items col-lg-6 order-md-2">
-                            <div className="item">
-                                <div className="img">
-                                    <img src="/assets/imgs/works/2.jpg" alt="" />
-                                    <div className="tags">
-                                        <Link href="#0">Website</Link>
-                                        <Link href="#0">UI/UX</Link>
-                                        <Link href="#0">illustration</Link>
-                                    </div>
-                                </div>
-                                <div className="cont mt-30">
-                                    <div className="info sub-color mb-10">
-                                        <span>2024</span>
-                                        <span className="dot"></span>
-                                        <span>WordPress</span>
-                                    </div>
-                                    <h6>
-                                        <Link className="font-bold" target="_blank" href="https://smartchoicebuilders.ca/">Smart Choice Builders</Link>
-                                    </h6>
-                                    <p>Smart Choice Builders is a business that specializes in the construction of buildings and structures. They approached us with a clear vision for their website, and we delivered a responsive and user-friendly platform that showcased their products and services effectively.</p>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                     <div className="row">
                         <div className="col-lg-12">
@@ -263,7 +199,9 @@ export default function Home() {
                 </div>
             </section>
 
-            <Testimonials />
+            <div className="mt-100">
+                <Testimonials />
+            </div>
 
             <section className="blog-sa">
                 <div className="container section-padding">

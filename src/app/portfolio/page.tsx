@@ -1,16 +1,18 @@
+import Testimonials from "@/components/Testimonials";
+import portfolioData from "@/data/portfolio";
 import Link from "next/link";
 
-export default function About() {
+export default function Portfolio() {
     return (
         <main>
-            <header className="serv-hed section-padding pb-0">
+            <header className="about-hed section-padding pb-0">
                 <div className="container">
                     <div className="caption mb-80">
-                        <h1 className="sec-head"><span className="sub-head mr-30">Our Portfolio</span> Transformations That Speak Volumes</h1>
-                        <div className="row justify-content-end">
-                            <div className="col-lg-5">
+                        <h1>This is where strategy meets execution.</h1>
+                        <div className="row">
+                            <div className="col-lg-12">
                                 <div className="text mt-30">
-                                    Explore case studies showcasing how we turned brand stories into high-performing websites.
+                                    <h6>Each project you see here reflects our approach: strong branding, clean design, solid development, and growth-driven thinking. We partner with businesses to create digital experiences that aren't just visually impressive, but built to perform, scale, and deliver measurable impact.</h6>
                                 </div>
                             </div>
                         </div>
@@ -79,117 +81,36 @@ export default function About() {
             <div className="works-mp section-padding pt-0">
                 <div className="container">
                     <div className="row md-marg gallery">
-                        <div className="col-lg-4 items">
-                            <div className="item">
-                                <div className="cont d-flex align-items-center">
-                                    <div>
-                                        <h5>Pacific Stairs & Railings</h5>
-                                        <span>Website</span>
+                        {portfolioData.map((item, index) => (
+                            <div className="col-lg-4 items" key={index}>
+                                <div className="item">
+                                    <div className="cont d-flex gap-5 align-items-center">
+                                        <div>
+                                            <h5>{item.title}</h5>
+                                            <p>{item.description}</p>
+                                        </div>
+                                        <div className="ml-auto">
+                                            <Link href={item.link}>
+                                                <i className="fa-solid fa-chevron-right"></i>
+                                            </Link>
+                                        </div>
                                     </div>
-                                    <div className="ml-auto">
-                                        <Link href="https://pacific-stairs.sayanisbiz.com/">
-                                            <i className="fa-solid fa-chevron-right"></i>
-                                        </Link>
+                                    <div className="img">
+                                        <img src={item.image} alt="" />
                                     </div>
-                                </div>
-                                <div className="img">
-                                    <img src="/assets/imgs/works/1.jpg" alt="" />
+                                    <div className="flex items-center gap-2 mt-3">
+                                        {item.tags.map((tag, index) => (
+                                            <span className="text-sm rounded-full px-3 py-1 bg-main text-dark" key={index}>{tag}</span>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-4 items">
-                            <div className="item">
-                                <div className="cont d-flex align-items-center">
-                                    <div>
-                                        <h5>Smart Choice Builders</h5>
-                                        <span>Website</span>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <Link href="https://smartchoicebuilders.ca/">
-                                            <i className="fa-solid fa-chevron-right"></i>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="img">
-                                    <img src="/assets/imgs/works/2.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 items">
-                            <div className="item">
-                                <div className="cont d-flex align-items-center">
-                                    <div>
-                                        <h5>313 Consultancy</h5>
-                                        <span>Website</span>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <Link href="https://313consultancy.org/">
-                                            <i className="fa-solid fa-chevron-right"></i>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="img">
-                                    <img src="/assets/imgs/works/3.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 items">
-                            <div className="item">
-                                <div className="cont d-flex align-items-center">
-                                    <div>
-                                        <h5>South Ridge Disposal Ltd.</h5>
-                                        <span>Website</span>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <Link href="https://southridgedisposal.com/">
-                                            <i className="fa-solid fa-chevron-right"></i>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="img">
-                                    <img src="/assets/imgs/works/4.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 items">
-                            <div className="item">
-                                <div className="cont d-flex align-items-center">
-                                    <div>
-                                        <h5>Vernon Stucco & Plaster Ltd.</h5>
-                                        <span>Website</span>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <Link href="#0">
-                                            <i className="fa-solid fa-chevron-right"></i>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="img">
-                                    <img src="/assets/imgs/works/5.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 items">
-                            <div className="item">
-                                <div className="cont d-flex align-items-center">
-                                    <div>
-                                        <h5>PQ Management</h5>
-                                        <span>Website</span>
-                                    </div>
-                                    <div className="ml-auto">
-                                        <Link href="https://pqmgmt.com/">
-                                            <i className="fa-solid fa-chevron-right"></i>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="img">
-                                    <img src="/assets/imgs/works/6.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
+
+            <Testimonials />
         </main>
     );
 }

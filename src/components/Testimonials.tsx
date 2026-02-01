@@ -2,7 +2,7 @@
 
 export default function Testimonials() {
     return (
-        <section className="testimonials-dm section-padding pb-0">
+        <section className="testimonials-dm pb-0">
             <div className="container">
                 <div className="sec-head mb-30">
                     <div className="row">

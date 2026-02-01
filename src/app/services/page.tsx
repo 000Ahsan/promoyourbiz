@@ -1,19 +1,17 @@
-import Link from "next/link";
+import Services from "@/components/Services";
 
-export default function Services() {
+export default function ServicesPage() {
     return (
         <main>
 
-            <header className="serv-hed section-padding pb-0">
+            <header className="about-hed section-padding pb-0">
                 <div className="container">
                     <div className="caption mb-80">
-                        <h1 className="sec-head"><span className="sub-head mr-30">Our Services</span> Expert web designers & web developers trained in the digital industry.</h1>
-                        <div className="row justify-content-end">
-                            <div className="col-lg-5">
+                        <h1>We're creative designers, skilled developers, and growth-driven marketers focused on building digital experiences that perform.</h1>
+                        <div className="row">
+                            <div className="col-lg-12">
                                 <div className="text mt-30">
-                                    <p>Crafting a virtual presence that stands out in the bustling online space
-                                        requires not only technical skill but a flair for the unique feel each brand
-                                        holds. With a unique view, she crafts projects</p>
+                                    <h6>Every project starts with understanding your brand's identity and business goals. From design to development to growth strategy, we create websites, applications, and digital solutions that are built to stand out, scale, and drive real results.</h6>
                                 </div>
                             </div>
                         </div>
@@ -79,123 +77,14 @@ export default function Services() {
                 </div>
             </header>
 
-            <section className="services-cst">
-                <div className="container-fluid">
-                    <div className="sub-bg section-padding radius-30">
-                        <div className="container">
-                            <div className="sec-head mb-80 pb-30 bord-thin-bottom">
-                                <div className="d-flex align-items-center">
-                                    <h6 className="sub-head">Our Services</h6>
-                                </div>
-                            </div>
-                            <div className="item d-flex align-items-end justify-content-between">
-                                <div className="numb">
-                                    <h6>01.</h6>
-                                </div>
-                                <div className="title">
-                                    <h2>Branding</h2>
-                                    <div className="list">
-                                        <span>Brand Identity</span>
-                                        <span>Logo Design</span>
-                                        <span>Brand Strategy</span>
-                                        <span>Visual Language</span>
-                                    </div>
-                                </div>
-                                <div className="ml-auto">
-                                    <div className="text-right">
-                                        <div className="icon">
-                                            <img src="../common/imgs/icons/crown-solid.svg" alt="" />
-                                            <span className="arrow">
-                                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <Link href="#0" className="alink"></Link>
-                            </div>
-                            <div className="item d-flex align-items-end justify-content-between">
-                                <div className="numb">
-                                    <h6>02.</h6>
-                                </div>
-                                <div className="title">
-                                    <h2>Design</h2>
-                                    <div className="list">
-                                        <span>UI/UX Design</span>
-                                        <span>Web & App Design</span>
-                                        <span>Brand Identity</span>
-                                        <span>Visual Direction</span>
-                                    </div>
-                                </div>
-                                <div className="ml-auto">
-                                    <div className="text-right">
-                                        <div className="icon">
-                                            <img src="../common/imgs/icons/bezier-curve-solid.svg" alt="" />
-                                            <span className="arrow">
-                                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <Link href="#0" className="alink"></Link>
-                            </div>
-                            <div className="item d-flex align-items-end justify-content-between">
-                                <div className="numb">
-                                    <h6>03.</h6>
-                                </div>
-                                <div className="title">
-                                    <h2>Code</h2>
-                                    <div className="list">
-                                        <span>Website Development</span>
-                                        <span>Web Applications</span>
-                                        <span>Mobile Apps</span>
-                                        <span>CMS & E-commerce</span>
-                                    </div>
-                                </div>
-                                <div className="ml-auto">
-                                    <div className="text-right">
-                                        <div className="icon">
-                                            <img src="../common/imgs/icons/code-solid.svg" alt="" />
-                                            <span className="arrow">
-                                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <Link href="#0" className="alink"></Link>
-                            </div>
-                            <div className="item d-flex align-items-end justify-content-between">
-                                <div className="numb">
-                                    <h6>04.</h6>
-                                </div>
-                                <div className="title">
-                                    <h2>Growth</h2>
-                                    <div className="list">
-                                        <span>SEO Optimization</span>
-                                        <span>Social Media Marketing</span>
-                                        <span>Performance Campaigns</span>
-                                        <span>Analytics & Strategy</span>
-                                    </div>
-                                </div>
-                                <div className="ml-auto">
-                                    <div className="text-right">
-                                        <div className="icon">
-                                            <img src="../common/imgs/icons/chart-line-solid.svg" alt="" />
-                                            <span className="arrow">
-                                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <Link href="#0" className="alink"></Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Services showLearnMoreButton={false} />
 
             <section className="intro-cst section-padding">
                 <div className="container">
                     <div className="row justify-content-end">
+                        <div className="col-lg-3 text-center">
+                            <img src="/assets/imgs/promoyourbiz-icon-yellow.png" alt="" />
+                        </div>
                         <div className="col-lg-9">
                             <div className="text mb-80">
                                 <h5>We are a team of passionate and crazy individuals dedicated to bringing your

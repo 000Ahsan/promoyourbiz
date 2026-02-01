@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-export default function Services() {
+export default function Services({ showLearnMoreButton = true }: { showLearnMoreButton?: boolean }) {
     return (
         <section className="services-dm sub-bg radius-30 section-padding !m-3">
             <div className="container section-padding pt-0">
@@ -12,18 +12,20 @@ export default function Services() {
                             <h2 className="mb-40">Our Service Expertise</h2>
                             <h6>We are a brand marketing agency with expertise, and we are on a mission to help you take the next step in your business. We offer a range of services to help you grow your business and achieve your goals.</h6>
                         </div>
-                        <div className="col-lg-12">
-                            <div className="text">
-                                <Link href="/services" className="crv-butn mt-40">
-                                    <div className="d-flex">
-                                        <span className="text">Learn More</span>
-                                        <span className="icon">
-                                            <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
-                                        </span>
-                                    </div>
-                                </Link>
+                        {showLearnMoreButton && (
+                            <div className="col-lg-12" >
+                                <div className="text">
+                                    <Link href="/services" className="crv-butn mt-40">
+                                        <div className="d-flex">
+                                            <span className="text">Learn More</span>
+                                            <span className="icon">
+                                                <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
+                                            </span>
+                                        </div>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
+                        )}
                     </div>
                 </div>
                 <div className="row justify-content-end">

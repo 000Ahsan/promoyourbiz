@@ -47,18 +47,18 @@ export default function Footer() {
                             <div className="item">
                                 <span className="sub-color">inquiry</span>
                                 <p>info@promoyourbiz.ca</p>
-                                <p>+1-877-246-0914</p>
+                                <p>+1 (877) 246 0914</p>
                             </div>
                         </div>
                         <div className="col-lg-12">
                             <div className="social-icon">
-                                <Link href="#0">
+                                <Link href="https://www.instagram.com/promoyourbiz/">
                                     <i className="fa-brands fa-instagram"></i>
                                 </Link>
-                                <Link href="#0">
+                                <Link href="https://www.facebook.com/Promoyourbiz">
                                     <i className="fa-brands fa-facebook"></i>
                                 </Link>
-                                <Link href="#0">
+                                <Link href="linkedin.com/company/promo-your-biz-ca/">
                                     <i className="fa-brands fa-linkedin-in"></i>
                                 </Link>
                             </div>
@@ -71,7 +71,7 @@ export default function Footer() {
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="copy sub-color md-mb50">
-                                <p>© 2025-26 <Link href="#0">Promo Your Biz</Link>. All Right Reserved</p>
+                                <p>© {new Date().getFullYear()} <Link href="https://promoyourbiz.ca">Promo Your Biz</Link>. All Right Reserved</p>
                             </div>
                         </div>
                         <div className="col-lg-4 d-flex justify-content-end">
@@ -80,6 +80,8 @@ export default function Footer() {
                                 <Link href="/about">About</Link>
                                 <Link href="/services">Services</Link>
                                 <Link href="/portfolio">Portfolio</Link>
+                                <Link href="/blogs">Blogs</Link>
+                                <Link href="/contact">Contact</Link>
                             </div>
                         </div>
                     </div>
