@@ -1,12 +1,60 @@
-import Link from "next/link";
+'use client';
+
+import { useState } from "react";
 
 export default function Contact() {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+    });
+    const [status, setStatus] = useState<{
+        type: 'success' | 'error' | null;
+        message: string | null;
+    }>({ type: null, message: null });
+    const [loading, setLoading] = useState(false);
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setLoading(true);
+        setStatus({ type: null, message: null });
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                setStatus({ type: 'success', message: 'Message sent successfully! We will get back to you soon.' });
+                setFormData({ name: "", email: "", subject: "", message: "" });
+            } else {
+                setStatus({ type: 'error', message: data.message || 'Something went wrong. Please try again later.' });
+            }
+        } catch (error) {
+            setStatus({ type: 'error', message: 'Failed to connect to the server. Please check your internet.' });
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <main>
             <header className="about-hed section-padding pb-0">
                 <div className="container">
                     <div className="caption mb-80">
-                        <h1>Let’s Build Something That Works!</h1>
+                        <h1>Let's Build Something That Works!</h1>
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="text mt-30">
@@ -96,42 +144,80 @@ export default function Contact() {
                         </div>
                         <div>
                             <div className="full-width mt-50">
-                                <form id="contact-form" method="post" action="contact.php">
+                                <form onSubmit={handleSubmit}>
 
-                                    <div className="messages"></div>
+                                    <div className="messages">
+                                        {status.type && (
+                                            <div className={`alert ${status.type === 'success' ? 'alert-success' : 'alert-danger'} mb-30`}
+                                                style={{ color: status.type === 'success' ? '#155724' : '#721c24', backgroundColor: status.type === 'success' ? '#d4edda' : '#f8d7da', padding: '15px', borderRadius: '5px' }}>
+                                                {status.message}
+                                            </div>
+                                        )}
+                                    </div>
 
                                     <div className="controls row">
 
                                         <div className="col-lg-6">
                                             <div className="form-group mb-30">
-                                                <input id="form_name" type="text" name="name" placeholder="Name"
-                                                    required />
+                                                <input
+                                                    id="form_name"
+                                                    type="text"
+                                                    name="name"
+                                                    placeholder="Name"
+                                                    required
+                                                    value={formData.name}
+                                                    onChange={handleChange}
+                                                />
                                             </div>
                                         </div>
 
                                         <div className="col-lg-6">
                                             <div className="form-group mb-30">
-                                                <input id="form_email" type="email" name="email" placeholder="Email"
-                                                    required />
+                                                <input
+                                                    id="form_email"
+                                                    type="email"
+                                                    name="email"
+                                                    placeholder="Email"
+                                                    required
+                                                    value={formData.email}
+                                                    onChange={handleChange}
+                                                />
                                             </div>
                                         </div>
 
                                         <div className="col-12">
                                             <div className="form-group mb-30">
-                                                <input id="form_subject" type="text" name="subject"
-                                                    placeholder="Subject" />
+                                                <input
+                                                    id="form_subject"
+                                                    type="text"
+                                                    name="subject"
+                                                    placeholder="Subject"
+                                                    value={formData.subject}
+                                                    onChange={handleChange}
+                                                />
                                             </div>
                                         </div>
 
                                         <div className="col-12">
                                             <div className="form-group">
-                                                <textarea id="form_message" name="message" placeholder="Message"
-                                                    rows={4} required></textarea>
+                                                <textarea
+                                                    id="form_message"
+                                                    name="message"
+                                                    placeholder="Message"
+                                                    rows={4}
+                                                    required
+                                                    value={formData.message}
+                                                    onChange={handleChange}
+                                                ></textarea>
                                             </div>
                                             <div className="mt-30">
-                                                <button type="submit" className="butn butn-md butn-bord butn-rounded">
+                                                <button
+                                                    type="submit"
+                                                    className={`butn butn-md butn-bord butn-rounded ${loading ? 'opacity-50 pointer-events-none' : ''}`}
+                                                    disabled={loading}
+                                                >
                                                     <div className="d-flex align-items-center">
-                                                        <span>Send Message</span>
+                                                        <span>{loading ? 'Sending...' : 'Send Message'}</span>
                                                         <span className="icon ml-10">
                                                             <img src="../common/imgs/icons/arrow-top-right.svg"
                                                                 alt="" />
