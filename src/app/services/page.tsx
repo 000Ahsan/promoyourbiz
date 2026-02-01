@@ -75,6 +75,9 @@ export default function ServicesPage() {
                         </div>
                     </div>
                 </div>
+                <div className="fit-img mx-3 radius-15">
+                    <img src="/assets/imgs/promoyourbiz-services-banner.jpg" alt="" />
+                </div>
             </header>
 
             <Services showLearnMoreButton={false} />

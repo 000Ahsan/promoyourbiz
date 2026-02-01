@@ -76,9 +76,12 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
+                <div className="fit-img mx-3 radius-15">
+                    <img src="/assets/imgs/promoyourbiz-portfolio-banner.jpg" alt="" />
+                </div>
             </header>
 
-            <div className="works-mp section-padding pt-0">
+            <div className="works-mp section-padding pt-0 mt-50">
                 <div className="container">
                     <div className="row md-marg gallery">
                         {portfolioData.map((item, index) => (
