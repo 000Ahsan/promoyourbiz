@@ -1,0 +1,72 @@
+---
+layout: base.njk
+showLearnMoreButton: false
+---
+
+<main>
+  <header class="post-header section-padding pb-0">
+    <div class="container">
+      <div class="caption mb-80">
+        <div class="tags mb-30">
+          <a href="/blogs/">{{ tag }}</a>
+        </div>
+        <h1>{{ title }}</h1>
+        <div class="info d-flex align-items-center mt-30">
+          <a href="#0" class="date">
+            <span>{{ date | readableDate }}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="bg-img" style="background: url('{{ image }}') center center / cover no-repeat;">
+      </div>
+    </div>
+  </header>
+
+  <section class="main-post section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="cont">
+            {{ content | safe }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="sec-head mb-40">
+        <h2>More Articles</h2>
+      </div>
+      <div class="row">
+        {% for post in collections.blog | reverse | slice(0, 3) %}
+          {% if post.url != page.url %}
+          <div class="col-lg-4 bord">
+            <div class="item">
+              <div class="img">
+                <img src="{{ post.data.image }}" alt="" />
+              </div>
+              <div class="cont mt-30">
+                <h6>
+                  <a class="font-bold" href="{{ post.url }}">{{ post.data.title }}</a>
+                </h6>
+                <div class="info d-flex align-items-center mt-20">
+                  <a href="#0" class="tag">
+                    <span>{{ post.data.tag }}</span>
+                  </a>
+                  <a href="#0" class="date">
+                    <span>/ {{ post.data.date | readableDate }}</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</main>

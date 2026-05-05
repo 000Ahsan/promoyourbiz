@@ -1,29 +1,18 @@
 {
-  "name": "promoyourbiz",
+  "name": "promoyourbiz-eleventy",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@types/nodemailer": "^7.0.9",
-    "next": "^16.1.1",
-    "nodemailer": "^7.0.13",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "css": "postcss tailwind.css -o public/assets/css/tailwind.css",
+    "start": "npm run css && eleventy --serve",
+    "build": "npm run css && eleventy",
+    "watch": "npm run css && eleventy --watch"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.4",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "@11ty/eleventy": "^3.0.0",
+    "@tailwindcss/postcss": "^4.2.4",
+    "postcss": "^8.5.12",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.2.4"
   }
 }
