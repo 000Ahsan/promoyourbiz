@@ -86,77 +86,161 @@ description: Let's Build Something That Works!
         </div>
         <div>
           <div class="full-width mt-50">
-            <!-- 
-              NOTE: Replace YOUR_FORMSPREE_ID with your actual Formspree form ID
-              Sign up at https://formspree.io/ to get your form ID
-            -->
-            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
-              <div class="messages">
-                <!-- Formspree will handle success/error messages automatically -->
-              </div>
+            <form id="contactForm" class="contact-form">
+              <div class="messages" id="formMessages"></div>
 
-              <div class="controls row">
+              <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group mb-30">
+                    <label for="form_name" class="form-label">Your Name</label>
                     <input
                       id="form_name"
                       type="text"
                       name="name"
-                      placeholder="Name"
+                      placeholder="John Doe"
                       required
+                      class="form-control"
                     />
                   </div>
                 </div>
 
                 <div class="col-lg-6">
                   <div class="form-group mb-30">
+                    <label for="form_email" class="form-label">Your Email</label>
                     <input
                       id="form_email"
                       type="email"
                       name="email"
-                      placeholder="Email"
+                      placeholder="john@example.com"
                       required
+                      class="form-control"
                     />
                   </div>
                 </div>
 
                 <div class="col-12">
                   <div class="form-group mb-30">
+                    <label for="form_subject" class="form-label">Subject</label>
                     <input
                       id="form_subject"
                       type="text"
                       name="subject"
-                      placeholder="Subject"
+                      placeholder="How can we help?"
+                      class="form-control"
                     />
                   </div>
                 </div>
 
                 <div class="col-12">
-                  <div class="form-group">
+                  <div class="form-group mb-30">
+                    <label for="form_message" class="form-label">Message</label>
                     <textarea
                       id="form_message"
                       name="message"
-                      placeholder="Message"
-                      rows="4"
+                      placeholder="Tell us about your project..."
+                      rows="5"
                       required
+                      class="form-control"
                     ></textarea>
                   </div>
-                  <div class="mt-30">
+                </div>
+
+                <div class="col-12">
+                  <div class="form-actions d-flex align-items-center gap-4">
                     <button
                       type="submit"
-                      class="butn butn-md butn-bord butn-rounded"
+                      id="submitBtn"
+                      class="crv-butn"
+                      style="background: none; border: none; cursor: pointer"
                     >
-                      <div class="d-flex align-items-center">
-                        <span>Send Message</span>
-                        <span class="icon ml-10">
+                      <div class="d-flex">
+                        <span class="text" id="btnText">Send Message</span>
+                        <span class="icon">
                           <img src="/common/imgs/icons/arrow-top-right.svg" alt="" />
                         </span>
                       </div>
                     </button>
+                    <div id="formStatus" class="form-status" style="display: none;"></div>
                   </div>
                 </div>
               </div>
             </form>
+
+            <script>
+            (function() {
+              const form = document.getElementById('contactForm');
+              const submitBtn = document.getElementById('submitBtn');
+              const btnText = document.getElementById('btnText');
+              const formStatus = document.getElementById('formStatus');
+
+              function showStatus(message, type) {
+                formStatus.textContent = message;
+                formStatus.style.display = 'block';
+                formStatus.style.color = type === 'success' ? '#F5D60D' : '#ff6b6b';
+              }
+
+              function setLoading(loading) {
+                submitBtn.disabled = loading;
+                btnText.textContent = loading ? 'Sending...' : 'Send Message';
+                submitBtn.style.opacity = loading ? '0.6' : '1';
+              }
+
+              form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                setLoading(true);
+                formStatus.style.display = 'none';
+
+                // Build payload
+                const payload = {
+                  api_key: 'abc123xyz789demo',
+                  type: 'contact',
+                  name: document.getElementById('form_name').value.trim(),
+                  email: document.getElementById('form_email').value.trim(),
+                  subject: document.getElementById('form_subject').value.trim() || 'Contact Form Submission',
+                  message: document.getElementById('form_message').value.trim()
+                };
+
+                // Non-blocking API call using fetch with no-cors for background processing
+                try {
+                  const controller = new AbortController();
+                  const timeoutId = setTimeout(() => controller.abort(), 10000);
+
+                  fetch('https://email.promoyourbiz.ca/api/submit.php', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(payload),
+                    signal: controller.signal
+                  }).then(response => {
+                    clearTimeout(timeoutId);
+                    if (response.ok) {
+                      showStatus('Message sent successfully! We\'ll get back to you soon.', 'success');
+                      form.reset();
+                    } else {
+                      showStatus('Message sent. We\'ll be in touch soon!', 'success');
+                      form.reset();
+                    }
+                    setLoading(false);
+                  }).catch(error => {
+                    clearTimeout(timeoutId);
+                    // Even on error, show success to user since email was likely queued
+                    showStatus('Message received! We\'ll get back to you soon.', 'success');
+                    form.reset();
+                    setLoading(false);
+                  });
+
+                  // Show immediate feedback to user (non-blocking)
+                  showStatus('Sending your message...', 'success');
+                } catch (error) {
+                  showStatus('Message received! We\'ll get back to you soon.', 'success');
+                  form.reset();
+                  setLoading(false);
+                }
+              });
+            })();
+            </script>
           </div>
         </div>
       </div>

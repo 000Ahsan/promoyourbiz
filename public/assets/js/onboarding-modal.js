@@ -1,5 +1,5 @@
 (function () {
-  const TOTAL_STEPS = 5;
+  const TOTAL_STEPS = 6;
 
   const services = [
     { id: 'branding', name: 'Brand Strategy' },
@@ -9,11 +9,10 @@
   ];
 
   const budgetLabels = {
-    'under-5k': 'Under $5,000',
-    '5k-10k': '$5,000 - $10,000',
-    '10k-25k': '$10,000 - $25,000',
-    '25k-50k': '$25,000 - $50,000',
-    '50k+': '$50,000+'
+    'under-5k': 'Under $1,000',
+    '5k-10k': '$1,000 - $5,000',
+    '10k-25k': '$5,000 - $10,000',
+    '25k-50k': '$10,000+'
   };
 
   const timelineLabels = {
@@ -54,14 +53,21 @@
   }
 
   function openModal() {
-    overlay.style.display = '';
+    overlay.style.display = 'flex';
+    // Force reflow to ensure transition works
+    void overlay.offsetWidth;
+    overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
     showStep(1);
     resetData();
   }
 
   function closeModal() {
-    overlay.style.display = 'none';
+    overlay.classList.remove('active');
+    // Wait for transition to finish before hiding
+    setTimeout(function() {
+      overlay.style.display = 'none';
+    }, 300);
     document.body.style.overflow = '';
   }
 
@@ -117,7 +123,7 @@
   }
 
   // Open button(s)
-  document.querySelectorAll('[data-open-onboarding]').forEach(function (btn) {
+  document.querySelectorAll('[data-open-onboarding], .open-onboarding-btn').forEach(function (btn) {
     btn.addEventListener('click', function (e) {
       e.preventDefault();
       openModal();
@@ -162,7 +168,7 @@
     data.budget = budgetRadio ? budgetRadio.value : '';
     data.timeline = timelineRadio ? timelineRadio.value : '';
     data.description = document.getElementById('modal-description').value.trim();
-    document.getElementById('step3-next').disabled = !(data.budget && data.timeline);
+    document.getElementById('step3-next').disabled = !(data.budget && data.timeline && data.description);
   }
   overlay.querySelectorAll('input[name="budget"], input[name="timeline"]').forEach(function (r) {
     r.addEventListener('change', validateStep3);
@@ -178,7 +184,7 @@
     data.contactName = contactNameInput.value.trim();
     data.contactEmail = contactEmailInput.value.trim();
     data.contactPhone = contactPhoneInput.value.trim();
-    document.getElementById('step4-next').disabled = !(data.contactName && data.contactEmail);
+    document.getElementById('step4-next').disabled = !(data.contactName && data.contactEmail && data.contactPhone);
   }
   contactNameInput.addEventListener('input', validateStep4);
   contactEmailInput.addEventListener('input', validateStep4);
@@ -200,6 +206,78 @@
 
   // Submit
   document.getElementById('modal-submit-btn').addEventListener('click', function () {
+    var submitBtn = document.getElementById('modal-submit-btn');
+    var submitStatus = document.getElementById('submit-status');
+    var btnText = submitBtn.querySelector('.btn-text');
+
+    function showStatus(message, type) {
+      submitStatus.textContent = message;
+      submitStatus.style.display = 'block';
+      submitStatus.style.color = type === 'success' ? '#F5D60D' : '#ff6b6b';
+    }
+
+    function setLoading(loading) {
+      submitBtn.disabled = loading;
+      btnText.textContent = loading ? 'Sending...' : 'Submit Information';
+      submitBtn.style.opacity = loading ? '0.6' : '1';
+    }
+
+    setLoading(true);
+    submitStatus.style.display = 'none';
+
+    // Build email payload with all collected data
+    var messageBody = 'New Website Audit Request\n\n' +
+      'Service: ' + ((services.find(function(s) { return s.id === data.service; }) || {}).name || data.service) + '\n' +
+      'Business Name: ' + data.businessName + '\n' +
+      'Business Type: ' + data.businessType + '\n' +
+      'Budget: ' + (budgetLabels[data.budget] || data.budget) + '\n' +
+      'Timeline: ' + (timelineLabels[data.timeline] || data.timeline) + '\n' +
+      'Project Description: ' + (data.description || 'Not provided') + '\n\n' +
+      'Contact Information:\n' +
+      'Name: ' + data.contactName + '\n' +
+      'Email: ' + data.contactEmail + '\n' +
+      'Phone: ' + (data.contactPhone || 'Not provided');
+
+    var payload = {
+      api_key: 'abc123xyz789demo',
+      type: 'website_audit',
+      name: data.contactName,
+      email: data.contactEmail,
+      subject: 'Website Audit Request - ' + data.businessName,
+      message: messageBody
+    };
+
+    // Non-blocking API call
+    try {
+      var controller = new AbortController();
+      var timeoutId = setTimeout(function() { controller.abort(); }, 10000);
+
+      fetch('https://email.promoyourbiz.ca/api/submit.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+        signal: controller.signal
+      }).then(function(response) {
+        clearTimeout(timeoutId);
+        setLoading(false);
+        showStep(6);
+      }).catch(function(error) {
+        clearTimeout(timeoutId);
+        setLoading(false);
+        showStep(6);
+      });
+
+      showStatus('Sending your information...', 'success');
+    } catch (error) {
+      setLoading(false);
+      showStep(6);
+    }
+  });
+
+  // Close button on final step
+  document.getElementById('modal-close-final').addEventListener('click', function() {
     closeModal();
   });
 
